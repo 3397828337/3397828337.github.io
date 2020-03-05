@@ -93,7 +93,7 @@
 /* Intro */
 
 	#intro {
-		color: #333333;
+		color: #ffffff;
 		padding: 8rem 4rem 6rem 4rem ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
@@ -125,11 +125,11 @@
 	}
 
 		#intro input, #intro select, #intro textarea {
-			color: #333333;
+			color: #ffffff;
 		}
 
 		#intro a {
-			color: #333333;
+			color: #ffffff;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
 
@@ -139,25 +139,25 @@
 			}
 
 		#intro strong, #intro b {
-			color: #333333;
+			color: #ffffff;
 		}
 
 		#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
-			color: #333333;
+			color: #ffffff;
 		}
 
 		#intro blockquote {
-			border-left-color: #333333;
+			border-left-color: #ffffff;
 		}
 
 		#intro code {
 			background: rgba(255, 255, 255, 0.075);
-			border-color: #333333;
+			border-color: #ffffff;
 		}
 
 		#intro hr {
-			border-bottom-color: #333333;
+			border-bottom-color: #ffffff;
 		}
 
 		#intro input[type="submit"],
@@ -184,7 +184,7 @@
 			#intro input[type="button"].special,
 			#intro button.special,
 			#intro .button.special {
-				background-color: #333333;
+				background-color: #ffffff;
 				box-shadow: none;
 				color: #1e252d !important;
 			}
@@ -1238,7 +1238,7 @@
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		background: rgba(100, 100, 100, 0.175);
+		background: rgba(255, 255, 255, 0.175);
 		height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
@@ -1395,7 +1395,7 @@
 	}
 
 		#main > * {
-
+			
 			border-top: solid 2px #eeeeee;
 			margin: 0;
 		}
@@ -1857,9 +1857,9 @@
 		}
 
 	#copyright {
-		color: #18bfef;
+		color: #ffffff;
 		position: relative;
-		color: rgba(24, 191, 239, 1);
+		color: rgba(255, 255, 255, 0.25);
 		cursor: default;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 0.8rem;
@@ -2049,7 +2049,7 @@
 		#navPanel li > a
 		{
 			color: #000;
-		}
+		} 
 		#navPanel .links {
 			list-style: none;
 			padding-left: 0;
@@ -2180,7 +2180,7 @@
 /*---------mainfirst------------------*/
 /* Me */
 	#main{
-		margin-bottom: 0.5rem;
+		margin-bottom: 0.5rem;	
 	}
 	#main .header .h1 {
 		color: #000;
@@ -2279,7 +2279,7 @@
 
 			#me {
 				padding: 0;
-				margin-right: 3rem;
+				margin-right: 3rem; 
 				height: 20em;
 			}
 
@@ -2401,7 +2401,7 @@
 
 			#main {
 				background: none;
-
+				
 			}
 
 			.panel {
@@ -2421,7 +2421,7 @@
 			#me .pic {
 				width: 100%;
 				padding-bottom: 1rem;
-
+				
 			}
 
 				#me .pic img {
