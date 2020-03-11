@@ -53,8 +53,12 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        
+<script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+
+        
+<script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
     <![endif]-->
 
     <!-- Custom CSS -->
@@ -73,7 +77,9 @@
 
 <body>
 
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
 
 <div class="frontApp">
   <div class="Page">
@@ -93,19 +99,19 @@
          style="margin-top: 1em; font-size: 1em; letter-spacing: 0.1em;">
       
         <div class="linkWrapper">
-          <a href="/" class="" target="">首页 Home Page</a>
+          <a href="/" class="linkInfo" target="" urlInfo='/'>首页 Home Page</a>
         </div>
       
         <div class="linkWrapper">
-          <a href="/work/" class="" target="">作品 Art Works</a>
+          <a href="/work" class="linkInfo" target="" urlInfo='/work'>作品 Art Works</a>
         </div>
       
         <div class="linkWrapper">
-          <a href="/cv/" class="" target="">履历 CV</a>
+          <a href="/cv" class="linkInfo" target="" urlInfo='/cv'>履历 CV</a>
         </div>
       
         <div class="linkWrapper">
-          <a href="/article/" class="" target="">文字 Articles</a>
+          <a href="/article" class="linkInfo" target="" urlInfo='/article'>文字 Articles</a>
         </div>
       
     </div>
@@ -128,6 +134,25 @@
         $('#navMenu').addClass('open');
       }
     });
+
+    $('.linkInfo').each(function() {
+      $(this).removeClass('router-link-exact-active');
+      $(this).removeClass('router-link-active');
+    });
+    var title = 'gallery';
+    if (title == '') {
+      $('a[urlInfo="/"]').addClass('router-link-exact-active');
+      $('a[urlInfo="/"]').addClass('router-link-active');
+    } else if (title == 'Art Works') {
+      $('a[urlInfo="/work"]').addClass('router-link-exact-active');
+      $('a[urlInfo="/work"]').addClass('router-link-active');
+    } else if (title == 'CV') {
+      $('a[urlInfo="/cv"]').addClass('router-link-exact-active');
+      $('a[urlInfo="/cv"]').addClass('router-link-active');
+    } else {
+      $('a[urlInfo="/article"]').addClass('router-link-exact-active');
+      $('a[urlInfo="/article"]').addClass('router-link-active');
+    }
   });
   </script>
 </nav>

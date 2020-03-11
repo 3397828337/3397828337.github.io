@@ -22,7 +22,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Art works"/>
+        <meta property="og:title" content="Art Works"/>
     
 
     <!--Open Graph Description-->
@@ -48,13 +48,17 @@
 
     <!-- Title -->
     
-    <title>Art works - 黄子怿 Huang Ziyi</title>
+    <title>Art Works - 黄子怿 Huang Ziyi</title>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        
+<script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+
+        
+<script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
     <![endif]-->
 
     <!-- Custom CSS -->
@@ -73,7 +77,9 @@
 
 <body>
 
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
 
 <div class="frontApp">
   <div class="Page">
@@ -93,19 +99,19 @@
          style="margin-top: 1em; font-size: 1em; letter-spacing: 0.1em;">
       
         <div class="linkWrapper">
-          <a href="/" class="" target="">首页 Home Page</a>
+          <a href="/" class="linkInfo" target="" urlInfo='/'>首页 Home Page</a>
         </div>
       
         <div class="linkWrapper">
-          <a href="/work/" class="" target="">作品 Art Works</a>
+          <a href="/work" class="linkInfo" target="" urlInfo='/work'>作品 Art Works</a>
         </div>
       
         <div class="linkWrapper">
-          <a href="/cv/" class="" target="">履历 CV</a>
+          <a href="/cv" class="linkInfo" target="" urlInfo='/cv'>履历 CV</a>
         </div>
       
         <div class="linkWrapper">
-          <a href="/article/" class="" target="">文字 Articles</a>
+          <a href="/article" class="linkInfo" target="" urlInfo='/article'>文字 Articles</a>
         </div>
       
     </div>
@@ -128,6 +134,25 @@
         $('#navMenu').addClass('open');
       }
     });
+
+    $('.linkInfo').each(function() {
+      $(this).removeClass('router-link-exact-active');
+      $(this).removeClass('router-link-active');
+    });
+    var title = 'Art Works';
+    if (title == '') {
+      $('a[urlInfo="/"]').addClass('router-link-exact-active');
+      $('a[urlInfo="/"]').addClass('router-link-active');
+    } else if (title == 'Art Works') {
+      $('a[urlInfo="/work"]').addClass('router-link-exact-active');
+      $('a[urlInfo="/work"]').addClass('router-link-active');
+    } else if (title == 'CV') {
+      $('a[urlInfo="/cv"]').addClass('router-link-exact-active');
+      $('a[urlInfo="/cv"]').addClass('router-link-active');
+    } else {
+      $('a[urlInfo="/article"]').addClass('router-link-exact-active');
+      $('a[urlInfo="/article"]').addClass('router-link-active');
+    }
   });
   </script>
 </nav>
@@ -143,9 +168,116 @@
   <h2 data-type="Header" class="Header pbEdit" style="margin-bottom: 0.7em; max-width: 1200px;">
     作品 Art Works
   </h2>
-  <div data-type="LongText" class="LongText pbEdit" style="margin-bottom: 1.1em; max-width: 1200px; text-align: center;">&nbsp; </div>
+  <div data-type="LongText" class="LongText pbEdit" style="margin-bottom: 1.1em; max-width: 1200px; text-align: center;">
+
+    
+<link rel="stylesheet" href="/css/main.css">
+
+    
+<link rel="stylesheet" href="/css/sortable.min.css">
+
+    
+<script src="/js/sortable.min.js"></script>
 
 
+    <main class="sortable">
+    <div class="container">
+      <div class="sort__wrapper">
+      <ul class="sortable__nav nav">
+        <li>
+        <a data-sjslink="all" class="nav__link">
+          所有
+        </a>
+        </li>
+        <li>
+        <a data-sjslink="oil" class="nav__link">
+          油画
+        </a>
+        </li>
+        <li>
+        <a data-sjslink="paper" class="nav__link">
+          纸本
+        </a>
+        </li>
+      </ul>
+
+      <div id="sortable" class="sjs-default">
+        <div data-sjsel="oil">
+        <div class="card">
+          <img class="card__picture" src="../images/work/001_thumb.jpg" alt="">
+          <div class="card-infos">
+          <h2 class="card__title">海边的树 A Tree By The Sea</h2>
+          <p class="card__text">
+            布面油画 Oil Paingting <br>50cm×60cm 2017
+          </p>
+          </div>
+        </div>
+        </div>
+        <div data-sjsel="oil">
+        <div class="card">
+          <img class="card__picture" src="../images/work/002_thumb.jpg" alt="">
+          <div class="card-infos">
+          <h2 class="card__title">逆光 Backlight</h2>
+          <p class="card__text">
+            布面油画 Oil Painting <br>150cm×100cm 2018
+          </p>
+          </div>
+        </div>
+        </div>
+        <div data-sjsel="paper">
+        <div class="card">
+          <img class="card__picture" src="../images/work/005_thumb.jpg" alt="">
+          <div class="card-infos">
+          <h2 class="card__title">塞纳河写生 Sketch of Seine</h2>
+          <p class="card__text">
+            纸本铅笔 Sketch <br>6.9cm×8.5cm 2018
+          </p>
+          </div>
+        </div>
+        </div>
+        <div data-sjsel="oil">
+        <div class="card">
+          <img class="card__picture" src="../images/work/004_thumb.jpg" alt="">
+          <div class="card-infos">
+          <h2 class="card__title">海港 Harbour</h2>
+          <p class="card__text">
+            布面油画 Oil Painting <br>80cm×80cm 2017
+          </p>
+          </div>
+        </div>
+        </div>
+        <div data-sjsel="paper">
+        <div class="card">
+          <img class="card__picture" src="../images/work/006_thumb.jpg" alt="">
+          <div class="card-infos">
+          <h2 class="card__title">女青年侧面像 Profile Portrait of a Girl</h2>
+          <p class="card__text">
+            纸本铅笔 Sketch <br>24cm×19cm 2017
+          </p>
+          </div>
+        </div>
+        </div>
+        <div data-sjsel="oil">
+        <div class="card">
+          <img class="card__picture" src="../images/work/003_thumb.jpg" alt="">
+          <div class="card-infos">
+          <h2 class="card__title">黄金时代 The Golden Age</h2>
+          <p class="card__text">
+            布面油画 Oil paingting <br>140cm×192cm 2017
+          </p>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </main>
+
+    <script>
+    document.querySelector('#sortable').sortablejs()
+    </script>
+
+  </div>
 
 </div>
 <div data-elements-position="bottom" class="pbElements pbSortable"></div>
