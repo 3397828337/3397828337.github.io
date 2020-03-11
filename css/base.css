@@ -1,0 +1,6133 @@
+@charset "UTF-8"; /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */
+blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html, iframe, legend, li, ol, p, pre, textarea, ul {
+  margin: 0;
+  padding: 0;
+  font-size: 100%
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: 400
+}
+
+ul {
+  list-style: none
+}
+
+button, input, select, textarea {
+  margin: 0
+}
+
+*, :after, :before {
+  box-sizing: inherit
+}
+
+audio, embed, img, object, video {
+  height: auto;
+  max-width: 100%
+}
+
+iframe {
+  border: 0;
+  max-width: 100%
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+td, th {
+  padding: 0;
+  text-align: left
+}
+
+.frontApp .Page .twoColumns {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center
+}
+
+.frontApp .Page .twoColumns .left, .frontApp .Page .twoColumns .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  box-sizing: border-box
+}
+
+.frontApp .Page .twoColumns.imageLeft .left {
+  width: 33%
+}
+
+.frontApp .Page .twoColumns.imageLeft .left img {
+  max-width: 100%
+}
+
+.frontApp .Page .twoColumns.imageLeft .right {
+  width: 60%
+}
+
+.frontApp .Page .twoColumns.imageRight .right {
+  width: 33%
+}
+
+.frontApp .Page .twoColumns.imageRight .right img {
+  max-width: 100%
+}
+
+.frontApp .Page .twoColumns.imageRight .left {
+  width: 60%
+}
+
+.frontApp .Page .twoColumns.slideshowLeft .left, .frontApp .Page .twoColumns.slideshowLeft .right {
+  width: 47%
+}
+
+.frontApp .Page .twoColumns.formRightSmall .left {
+  width: 33%
+}
+
+.frontApp .Page .twoColumns.formRightSmall .right {
+  width: 60%
+}
+
+.frontApp .Page .twoColumns.twoSides1 .left {
+  align-items: flex-start
+}
+
+.frontApp .Page .twoColumns.twoSides1 .right {
+  align-items: flex-end
+}
+
+.frontApp .Page .twoColumns.text2Cols3 {
+  align-items: flex-start
+}
+
+.frontApp .Page .twoColumns.text2Cols3 .left, .frontApp .Page .twoColumns.text2Cols3 .right {
+  align-items: flex-start;
+  width: 60%
+}
+
+.frontApp .Page .twoColumns.text2Cols3 .left {
+  width: 40%;
+  padding-right: 3vw
+}
+
+.frontApp .Page .twoColumns.footerCols {
+  align-items: flex-end
+}
+
+.frontApp .Page .twoColumns.footerCols .left {
+  align-items: flex-start
+}
+
+.frontApp .Page .twoColumns.footerCols .right {
+  padding-left: 5vh;
+  align-items: flex-end
+}
+
+.frontApp .Page .actionCols input[type=text], .frontApp .Page .footerCols input[type=text] {
+  margin-bottom: 7px
+}
+
+.frontApp .Page .actionCols .Button, .frontApp .Page .footerCols .Button {
+  font-size: 70%
+}
+
+.frontApp .Page .actionCols .Button a, .frontApp .Page .footerCols .Button a {
+  padding: 8px 12px
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .twoColumns {
+    display: block
+  }
+
+  .frontApp .Page .twoColumns .left, .frontApp .Page .twoColumns .right {
+    width: 100% !important
+  }
+
+  .frontApp .Page .twoColumns .left:first-child, .frontApp .Page .twoColumns .right:first-child {
+    margin-bottom: 2em
+  }
+}
+
+.frontApp .twoColumnsAndTop .colWrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start
+}
+
+.frontApp .twoColumnsAndTop .colWrapper .left, .frontApp .twoColumnsAndTop .colWrapper .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  box-sizing: border-box
+}
+
+.frontApp .twoColumnsAndTop .colWrapper .left {
+  padding-right: 3vw
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .twoColumnsAndTop .colWrapper {
+    display: block
+  }
+
+  .frontApp .twoColumnsAndTop .colWrapper .left, .frontApp .twoColumnsAndTop .colWrapper .right {
+    width: 100%;
+    padding: 0
+  }
+}
+
+.frontApp .Page .threeColumns {
+  display: flex;
+  justify-content: center;
+  flex-direction: row
+}
+
+.frontApp .Page .threeColumns .left {
+  justify-self: flex-start;
+  align-items: flex-start
+}
+
+.frontApp .Page .threeColumns .right {
+  justify-self: flex-end;
+  align-items: flex-end
+}
+
+.frontApp .Page .threeColumns .center {
+  white-space: nowrap
+}
+
+.frontApp .Page .imageTop .SingleImageBg, .frontApp .Page .imageTop .Slideshow, .frontApp .Page .slideshowTop .SingleImageBg, .frontApp .Page .slideshowTop .Slideshow {
+  width: 100%;
+  z-index: 0
+}
+
+.frontApp .Page .imageTop .pbElements, .frontApp .Page .slideshowTop .pbElements {
+  width: 80%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.frontApp .Page .imageTop.imageBottom {
+  flex-direction: column-reverse
+}
+
+.frontApp .Page .imageTop2 .SingleImageBg {
+  height: 40vh;
+  width: 100%;
+  z-index: 0
+}
+
+.frontApp .Page .imageTop2 .bottomCols {
+  width: 80%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center
+}
+
+.frontApp .Page .imageTop2 .bottomCols .left, .frontApp .Page .imageTop2 .bottomCols .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 48%
+}
+
+.frontApp .Page .imageTop2 .bottomCols .left {
+  width: 33%
+}
+
+.frontApp .Page .imageTop2 .bottomCols .left img {
+  max-width: 100%
+}
+
+.frontApp .Page .imageTop2 .bottomCols .right {
+  width: 60%
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .imageTop2 .bottomCols {
+    display: block
+  }
+
+  .frontApp .Page .imageTop2 .bottomCols .left, .frontApp .Page .imageTop2 .bottomCols .right {
+    width: 100%;
+    box-sizing: border-box
+  }
+}
+
+.frontApp .Page .halfScreen {
+  display: flex;
+  flex-direction: row
+}
+
+.frontApp .Page .halfScreen .halfFigure {
+  width: 50vw;
+  align-self: auto
+}
+
+.frontApp .Page .halfScreen .halfFigure.Slideshow {
+  width: 50vw
+}
+
+.frontApp .Page .halfScreen .pbElements {
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  padding: 4vh 5vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center
+}
+
+.frontApp .Page .halfScreen.halfscreenRight {
+  flex-direction: row-reverse
+}
+
+.frontApp .Page .halfScreen.halfscreenCv {
+  flex-direction: row-reverse
+}
+
+.frontApp .Page .halfScreen.halfscreenCv .pbElements {
+  width: 65vw;
+  padding-left: 10vw;
+  padding-right: 10vw
+}
+
+.frontApp .Page .halfScreen.halfscreenCv .halfFigure {
+  width: 35vw
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .halfScreen {
+    display: block
+  }
+
+  .frontApp .Page .halfScreen .halfFigure {
+    width: 100% !important;
+    min-height: 50vh
+  }
+
+  .frontApp .Page .halfScreen .halfFigure .theBgImgDiv {
+    min-height: 50vh
+  }
+
+  .frontApp .Page .halfScreen .pbElements {
+    width: 100%;
+    box-sizing: border-box
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .contactCenter, .frontApp .formRightSmall {
+    padding-left: 7vw !important;
+    padding-right: 7vw !important
+  }
+}
+
+.frontApp .Page .cv1 .wrapper, .frontApp .Page .cv2 .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+.frontApp .Page .cv1 .wrapper .left, .frontApp .Page .cv1 .wrapper .right, .frontApp .Page .cv2 .wrapper .left, .frontApp .Page .cv2 .wrapper .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start
+}
+
+.frontApp .Page .cv1 .wrapper .left, .frontApp .Page .cv2 .wrapper .left {
+  width: 60%
+}
+
+.frontApp .Page .cv1 .wrapper .right, .frontApp .Page .cv2 .wrapper .right {
+  width: 33%
+}
+
+.frontApp .Page .cv1 .wrapper .right img, .frontApp .Page .cv2 .wrapper .right img {
+  max-width: 100%;
+  margin-bottom: 20px
+}
+
+.frontApp .Page .cv2 .wrapperTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .cv1 .wrapper, .frontApp .Page .cv2 .wrapper {
+    flex-direction: column-reverse
+  }
+
+  .frontApp .Page .cv1 .wrapper .left, .frontApp .Page .cv1 .wrapper .right, .frontApp .Page .cv2 .wrapper .left, .frontApp .Page .cv2 .wrapper .right {
+    width: 100%;
+    box-sizing: border-box
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .cv2 .wrapper {
+    flex-direction: column
+  }
+}
+
+.frontApp .Page .coverTemp {
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+
+.frontApp .Page .coverTemp * {
+  z-index: 1
+}
+
+.frontApp .Page .coverTemp .SingleImageBg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0
+}
+
+.frontApp .Page .coverTemp.text1 .pbElements {
+  max-width: 800px;
+  align-self: flex-start
+}
+
+.frontApp .Page .coverTemp.text2 .pbElements {
+  max-width: 800px;
+  align-self: flex-end
+}
+
+.frontApp .Page .coverTemp.text3 {
+  justify-content: flex-start
+}
+
+.frontApp .Page .coverTemp.text3 .pbElements {
+  align-self: center
+}
+
+.frontApp .Page .coverTemp.text4 {
+  justify-content: flex-end
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .coverTemp.text1, .frontApp .Page .coverTemp.text2 {
+    padding: 5vh !important
+  }
+
+  .frontApp .Page .coverTemp.text1 .pbElements, .frontApp .Page .coverTemp.text2 .pbElements {
+    align-self: center
+  }
+}
+
+.frontApp .Page .coverTemp.corner .pbElements {
+  max-width: 800px;
+  margin-left: 13vh;
+  margin-top: 13vh;
+  align-self: flex-start;
+  margin-bottom: auto
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .coverTemp.corner .pbElements {
+    margin-left: 0
+  }
+
+  .frontApp .Page .coverTemp.corner .pbElements * {
+    align-self: center !important
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .cover2 .Links {
+    flex-direction: column;
+    line-height: 150%;
+    text-align: center
+  }
+
+  .frontApp .Page .cover7 .Links {
+    font-size: xx-large !important;
+    line-height: 150%
+  }
+
+  .frontApp .Page .coverTemp.text1 *, .frontApp .Page .coverTemp.text2 * {
+    align-self: center !important
+  }
+}
+
+.frontApp .Page .coverSlideshow .Slideshow, .frontApp .Page .coverSlideshow4 .Slideshow {
+  z-index: 0
+}
+
+.frontApp .Page .coverSlideshow .pbElements, .frontApp .Page .coverSlideshow4 .pbElements {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1
+}
+
+.frontApp .Page .coverSlideshow4 .pbElements {
+  justify-content: flex-end;
+  padding-bottom: 10vh
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .email1 .Links, .frontApp .Page .email1 .SocialMedia.titles, .frontApp .Page .social1 .Links, .frontApp .Page .social1 .SocialMedia.titles, .frontApp .Page .submenu1 .Links, .frontApp .Page .submenu1 .SocialMedia.titles, .frontApp .Page .submenuCentered2 .Links, .frontApp .Page .submenuCentered2 .SocialMedia.titles {
+    flex-direction: column;
+    line-height: 150%;
+    text-align: center
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .footer1, .frontApp .Page .submenu4, .frontApp .Page .twoColumns.actionCols, .frontApp .Page .twoColumns.footerCols, .frontApp .Page .twoColumns.twoSides1 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+  }
+
+  .frontApp .Page .footer1 .left, .frontApp .Page .footer1 .right, .frontApp .Page .submenu4 .left, .frontApp .Page .submenu4 .right, .frontApp .Page .twoColumns.actionCols .left, .frontApp .Page .twoColumns.actionCols .right, .frontApp .Page .twoColumns.footerCols .left, .frontApp .Page .twoColumns.footerCols .right, .frontApp .Page .twoColumns.twoSides1 .left, .frontApp .Page .twoColumns.twoSides1 .right {
+    justify-self: center;
+    align-items: center;
+    padding: 0
+  }
+
+  .frontApp .Page .footer1 .left .Links, .frontApp .Page .footer1 .right .Links, .frontApp .Page .submenu4 .left .Links, .frontApp .Page .submenu4 .right .Links, .frontApp .Page .twoColumns.actionCols .left .Links, .frontApp .Page .twoColumns.actionCols .right .Links, .frontApp .Page .twoColumns.footerCols .left .Links, .frontApp .Page .twoColumns.footerCols .right .Links, .frontApp .Page .twoColumns.twoSides1 .left .Links, .frontApp .Page .twoColumns.twoSides1 .right .Links {
+    flex-direction: column;
+    line-height: 150%
+  }
+
+  .frontApp .Page .footer1 .left .Logo, .frontApp .Page .footer1 .left .LongText, .frontApp .Page .footer1 .left .ShortText, .frontApp .Page .footer1 .right .Logo, .frontApp .Page .footer1 .right .LongText, .frontApp .Page .footer1 .right .ShortText, .frontApp .Page .submenu4 .left .Logo, .frontApp .Page .submenu4 .left .LongText, .frontApp .Page .submenu4 .left .ShortText, .frontApp .Page .submenu4 .right .Logo, .frontApp .Page .submenu4 .right .LongText, .frontApp .Page .submenu4 .right .ShortText, .frontApp .Page .twoColumns.actionCols .left .Logo, .frontApp .Page .twoColumns.actionCols .left .LongText, .frontApp .Page .twoColumns.actionCols .left .ShortText, .frontApp .Page .twoColumns.actionCols .right .Logo, .frontApp .Page .twoColumns.actionCols .right .LongText, .frontApp .Page .twoColumns.actionCols .right .ShortText, .frontApp .Page .twoColumns.footerCols .left .Logo, .frontApp .Page .twoColumns.footerCols .left .LongText, .frontApp .Page .twoColumns.footerCols .left .ShortText, .frontApp .Page .twoColumns.footerCols .right .Logo, .frontApp .Page .twoColumns.footerCols .right .LongText, .frontApp .Page .twoColumns.footerCols .right .ShortText, .frontApp .Page .twoColumns.twoSides1 .left .Logo, .frontApp .Page .twoColumns.twoSides1 .left .LongText, .frontApp .Page .twoColumns.twoSides1 .left .ShortText, .frontApp .Page .twoColumns.twoSides1 .right .Logo, .frontApp .Page .twoColumns.twoSides1 .right .LongText, .frontApp .Page .twoColumns.twoSides1 .right .ShortText {
+    text-align: center !important
+  }
+
+  .frontApp .Page .footer1 .left .Form, .frontApp .Page .footer1 .left .Links, .frontApp .Page .footer1 .left .Logo, .frontApp .Page .footer1 .left .ShortText, .frontApp .Page .footer1 .left .SocialMedia, .frontApp .Page .footer1 .right .Form, .frontApp .Page .footer1 .right .Links, .frontApp .Page .footer1 .right .Logo, .frontApp .Page .footer1 .right .ShortText, .frontApp .Page .footer1 .right .SocialMedia, .frontApp .Page .submenu4 .left .Form, .frontApp .Page .submenu4 .left .Links, .frontApp .Page .submenu4 .left .Logo, .frontApp .Page .submenu4 .left .ShortText, .frontApp .Page .submenu4 .left .SocialMedia, .frontApp .Page .submenu4 .right .Form, .frontApp .Page .submenu4 .right .Links, .frontApp .Page .submenu4 .right .Logo, .frontApp .Page .submenu4 .right .ShortText, .frontApp .Page .submenu4 .right .SocialMedia, .frontApp .Page .twoColumns.actionCols .left .Form, .frontApp .Page .twoColumns.actionCols .left .Links, .frontApp .Page .twoColumns.actionCols .left .Logo, .frontApp .Page .twoColumns.actionCols .left .ShortText, .frontApp .Page .twoColumns.actionCols .left .SocialMedia, .frontApp .Page .twoColumns.actionCols .right .Form, .frontApp .Page .twoColumns.actionCols .right .Links, .frontApp .Page .twoColumns.actionCols .right .Logo, .frontApp .Page .twoColumns.actionCols .right .ShortText, .frontApp .Page .twoColumns.actionCols .right .SocialMedia, .frontApp .Page .twoColumns.footerCols .left .Form, .frontApp .Page .twoColumns.footerCols .left .Links, .frontApp .Page .twoColumns.footerCols .left .Logo, .frontApp .Page .twoColumns.footerCols .left .ShortText, .frontApp .Page .twoColumns.footerCols .left .SocialMedia, .frontApp .Page .twoColumns.footerCols .right .Form, .frontApp .Page .twoColumns.footerCols .right .Links, .frontApp .Page .twoColumns.footerCols .right .Logo, .frontApp .Page .twoColumns.footerCols .right .ShortText, .frontApp .Page .twoColumns.footerCols .right .SocialMedia, .frontApp .Page .twoColumns.twoSides1 .left .Form, .frontApp .Page .twoColumns.twoSides1 .left .Links, .frontApp .Page .twoColumns.twoSides1 .left .Logo, .frontApp .Page .twoColumns.twoSides1 .left .ShortText, .frontApp .Page .twoColumns.twoSides1 .left .SocialMedia, .frontApp .Page .twoColumns.twoSides1 .right .Form, .frontApp .Page .twoColumns.twoSides1 .right .Links, .frontApp .Page .twoColumns.twoSides1 .right .Logo, .frontApp .Page .twoColumns.twoSides1 .right .ShortText, .frontApp .Page .twoColumns.twoSides1 .right .SocialMedia {
+    align-items: center !important;
+    align-self: center !important
+  }
+
+  .frontApp .Page .footer1 .center, .frontApp .Page .submenu4 .center, .frontApp .Page .twoColumns.actionCols .center, .frontApp .Page .twoColumns.footerCols .center, .frontApp .Page .twoColumns.twoSides1 .center {
+    margin: 2em 0
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .twoColumns.twoSides1 .right {
+    margin-top: 2em
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .halfScreenMenu .Links, .frontApp .Page .submenuBig .Links {
+    font-size: xx-large !important;
+    line-height: 150%
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .twoColumns.footerCols .right {
+    margin-top: 2em
+  }
+}
+
+.frontApp a {
+  color: inherit;
+  text-decoration: inherit
+}
+
+.frontApp .Section {
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-width: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover
+}
+
+.frontApp .Columns {
+  display: flex;
+  flex-direction: row;
+  width: 100%
+}
+
+.frontApp .Columns .Column {
+  width: 50%;
+  display: flex;
+  flex-direction: column
+}
+
+@media only screen and (max-width: 1000px) {
+  .frontApp .Columns {
+    display: block
+  }
+
+  .frontApp .Columns .Column {
+    width: 100%
+  }
+}
+
+.frontApp .Logo a {
+  display: block
+}
+
+.frontApp .Logo a.imgLogo {
+  height: 100%;
+  width: auto;
+  display: inline-block;
+  font-size: 0
+}
+
+.frontApp .Logo a.imgLogo img {
+  font-size: 0;
+  max-height: 100%;
+  max-width: 100%
+}
+
+.frontApp .LongText {
+  width: 100%
+}
+
+.frontApp .BlogText ul, .frontApp .ClientGalleryText ul, .frontApp .LongText ul, .frontApp .ProductText ul, .frontApp .StoreText ul {
+  list-style: disc;
+  list-style-position: inside
+}
+
+.frontApp .BlogText ol, .frontApp .ClientGalleryText ol, .frontApp .LongText ol, .frontApp .ProductText ol, .frontApp .StoreText ol {
+  list-style-position: inside
+}
+
+.frontApp .BlogButton, .frontApp .Button, .frontApp .CaptionButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.frontApp .BlogButton a, .frontApp .BlogButton span, .frontApp .Button a, .frontApp .Button span, .frontApp .CaptionButton a, .frontApp .CaptionButton span {
+  cursor: pointer;
+  display: block;
+  font-size: inherit;
+  letter-spacing: inherit;
+  padding: .5em 1.1em;
+  text-align: center
+}
+
+.frontApp .BlogButton {
+  margin-bottom: 4rem
+}
+
+.frontApp .Form {
+  display: flex;
+  flex-direction: column;
+  width: 100%
+}
+
+.frontApp .Form .onlyShowInputFront, .frontApp .Form input[type=number], .frontApp .Form input[type=text], .frontApp .Form select, .frontApp .Form textarea {
+  margin-bottom: 40px;
+  box-shadow: inset 200px 200px 300px 200px rgba(0, 0, 0, .04)
+}
+
+.frontApp .Form .onlyShowInputFront::placeholder, .frontApp .Form input[type=number]::placeholder, .frontApp .Form input[type=text]::placeholder, .frontApp .Form select::placeholder, .frontApp .Form textarea::placeholder {
+  color: currentColor
+}
+
+.frontApp .Form .onlyShowInputFront, .frontApp .Form input[type=number], .frontApp .Form input[type=text], .frontApp .Form select, .frontApp .Form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid;
+  background-color: inherit !important;
+  border-radius: 0;
+  padding: 10px;
+  opacity: .7;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  margin-top: 4px;
+  box-sizing: border-box
+}
+
+.frontApp .Form select {
+  opacity: 1
+}
+
+.frontApp .Form div.onlyShowInputFront {
+  background: #fff;
+  min-height: 3.8rem;
+  overflow: hidden
+}
+
+.frontApp .Form input[type=number]:focus, .frontApp .Form input[type=text]:focus, .frontApp .Form select:focus, .frontApp .Form textarea:focus {
+  outline: 0;
+  opacity: 1
+}
+
+.frontApp .Form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(https://www.portfoliobox.net/pb4/application/_img/app/selectarrow4.png) 98% no-repeat #fff
+}
+
+.frontApp .Form textarea {
+  height: 45px
+}
+
+.frontApp .Form .BlogButton, .frontApp .Form .Button {
+  cursor: pointer
+}
+
+.frontApp .BlogShare, .frontApp .ProductShare, .frontApp .SocialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center
+}
+
+.frontApp .BlogShare .icon, .frontApp .ProductShare .icon, .frontApp .SocialMedia .icon {
+  margin-right: .6em;
+  margin-left: .6em
+}
+
+@media only screen and (max-width: 1000px) {
+  .frontApp .SocialMedia.titles {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 160%
+  }
+}
+
+.frontApp .Links {
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+.frontApp .Links a, .frontApp .Links span {
+  display: block;
+  margin-right: .6em;
+  margin-left: .6em
+}
+
+@media only screen and (max-width: 1000px) {
+  .frontApp .Links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 160%
+  }
+}
+
+.frontApp .Music {
+  width: 100%
+}
+
+.frontApp .Music .track {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  padding-bottom: 1em
+}
+
+.frontApp .Music .track .coverAndArtist {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center
+}
+
+.frontApp .Music .track .coverAndArtist .trackImageWrapper {
+  height: 84px;
+  width: 150px;
+  box-shadow: inset 200px 200px 300px 200px rgba(0, 0, 0, .07);
+  margin-right: 30px;
+  position: relative
+}
+
+.frontApp .Music .track .coverAndArtist .trackImageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center
+}
+
+.frontApp .Music .track .coverAndArtist .trackImageWrapper .playIcon {
+  color: #fff;
+  position: absolute;
+  top: calc(50% - 1rem);
+  left: calc(50% - 1rem);
+  display: block;
+  font-size: 2rem;
+  z-index: 2;
+  opacity: .7;
+  cursor: pointer
+}
+
+.frontApp .Music .track .coverAndArtist .trackImageWrapper .playIcon:hover {
+  opacity: 1
+}
+
+.frontApp .Music .track .coverAndArtist .artist {
+  font-weight: 700;
+  width: 300px
+}
+
+.frontApp .Music .track .titleAndLength {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center
+}
+
+@media only screen and (max-width: 700px) {
+  .frontApp .Music .track {
+    display: block;
+    width: 100%
+  }
+
+  .frontApp .Music .track .coverAndArtist {
+    display: block;
+    width: 100%;
+    padding: 3px;
+    text-align: center
+  }
+
+  .frontApp .Music .track .coverAndArtist .trackImageWrapper {
+    width: 100%;
+    height: 55vw;
+    margin-bottom: 10px
+  }
+
+  .frontApp .Music .track .titleAndLength {
+    display: block;
+    text-align: center
+  }
+
+  .frontApp .Music .track .titleAndLength span {
+    display: block
+  }
+}
+
+.frontApp .MainMenu {
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-width: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover
+}
+
+.frontApp .MainMenuLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 2
+}
+
+.frontApp .MainMenuLinks .linkWrapper {
+  position: relative
+}
+
+@media only screen and (max-width: 1000px) {
+  .frontApp .MainMenuLinks .linkWrapper {
+    text-align: center
+  }
+}
+
+.frontApp .MainMenuLinks .linkWrapper a {
+  display: block;
+  margin-right: .6em;
+  margin-left: .6em
+}
+
+.frontApp .MainMenuLinks .linkWrapper .sublinks {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: -50%;
+  padding: 1.5em;
+  background: #fff;
+  box-shadow: 0 .1em 1em 0 rgba(0, 0, 0, .4);
+  border-radius: 5px;
+  z-index: 3
+}
+
+@media only screen and (max-width: 1000px) {
+  .frontApp .MainMenuLinks .linkWrapper .sublinks {
+    position: relative;
+    display: block;
+    top: auto;
+    left: auto;
+    padding: 0;
+    background: 0 0;
+    box-shadow: none;
+    border-radius: 0;
+    z-index: 1;
+    font-size: 80%
+  }
+}
+
+.frontApp .MainMenuLinks .linkWrapper:hover .sublinks {
+  display: block
+}
+
+.frontApp .Page.hasLeftMenu .MainMenuLinks .linkWrapper .sublinks {
+  position: relative;
+  display: block;
+  top: auto;
+  left: auto;
+  padding: 0;
+  background: 0 0;
+  box-shadow: none;
+  border-radius: 0;
+  z-index: 0;
+  margin-top: .3em;
+  margin-bottom: 1.3em;
+  font-size: 80%
+}
+
+.frontApp .CvList {
+  width: 100%
+}
+
+.frontApp .CvList article {
+  margin-bottom: 30px
+}
+
+.frontApp .CvList article .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  font-size: 110%
+}
+
+.frontApp .CvList article .top h5.title {
+  font-weight: inherit
+}
+
+.frontApp .CvList article .desc {
+  width: 70%
+}
+
+@media only screen and (max-width: 1000px) {
+  .frontApp .CvList article .top {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 0
+  }
+
+  .frontApp .CvList article .top .date {
+    margin: .5em 0
+  }
+
+  .frontApp .CvList article .desc {
+    width: 100%
+  }
+}
+
+.frontApp .CvList article:last-child {
+  margin-bottom: 0
+}
+
+.frontApp .Skills {
+  width: 100%
+}
+
+.frontApp .Skills article {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between
+}
+
+.frontApp .Skills article .bar {
+  background: #d3d3d3;
+  border-radius: 4px;
+  height: 10px;
+  width: 60%
+}
+
+.frontApp .Skills article .bar .level {
+  background: #4d85e2;
+  border-radius: inherit;
+  height: inherit
+}
+
+.frontApp .SingleImage {
+  min-height: 20px;
+  min-width: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%
+}
+
+.frontApp .SingleImage img {
+  display: block;
+  max-width: 100%
+}
+
+.frontApp .SingleImage .pbVideo {
+  position: relative;
+  width: 100%;
+  height: 100%
+}
+
+.frontApp .SingleImage .pbVideo.isPlaying {
+  overflow: hidden;
+  padding-top: 56.25%;
+  width: 100%;
+  height: 100%
+}
+
+.frontApp .SingleImage .pbVideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0
+}
+
+.frontApp .SingleImage .pbVideo .playIcon {
+  color: #fff;
+  position: absolute;
+  top: calc(50% - 2.5rem);
+  left: calc(50% - 2.5rem);
+  display: block;
+  font-size: 5rem;
+  z-index: 2;
+  opacity: .7;
+  cursor: pointer
+}
+
+.frontApp .SingleImage .pbVideo .playIcon:hover {
+  opacity: 1
+}
+
+.frontApp .SingleImageBg .theBgImgDiv {
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%
+}
+
+.frontApp .SingleImageBg .pbVideo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.frontApp .SingleImageBg .pbVideo .playIcon {
+  color: #fff;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: block;
+  font-size: 10rem;
+  z-index: 2;
+  opacity: .7;
+  cursor: pointer
+}
+
+.frontApp .SingleImageBg .pbVideo .playIcon:hover {
+  opacity: 1
+}
+
+.frontApp .SingleImageBg .pbVideo iframe {
+  width: 100%;
+  height: 100%;
+  max-width: none
+}
+
+.frontApp .Gallery, .frontApp .SectionNews, .frontApp .SectionProd {
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100px;
+  position: relative;
+  min-width: 100px
+}
+
+.frontApp .BlogPost {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  border-bottom-style: solid;
+  border-top-style: solid
+}
+
+.frontApp .BlogPost .reverseOrderWrapper, .frontApp .BlogPost .reverseTop {
+  display: flex;
+  flex-direction: column
+}
+
+.frontApp .BlogPost.reverse-order .reverseOrderWrapper {
+  flex-direction: column-reverse
+}
+
+.frontApp .BlogPost.reverse-order .reverseTop {
+  margin-top: 3em
+}
+
+.frontApp .BlogPost:last-child {
+  margin-bottom: 0;
+  border-bottom: none
+}
+
+@media only screen and (max-width: 1000px) {
+  .frontApp .BlogPost {
+    padding: 5vw
+  }
+}
+
+.frontApp .BlogText {
+  margin-left: auto;
+  margin-right: auto
+}
+
+.frontApp .BlogTags {
+  display: flex;
+  align-items: flex-start
+}
+
+.frontApp .BlogTags a {
+  margin-right: .4em;
+  margin-left: .4em
+}
+
+.frontApp .BlogTags span.ficon-angle-right {
+  align-self: flex-end;
+  font-size: 120%;
+  opacity: .5
+}
+
+.frontApp .BlogCommentIcon {
+  display: flex;
+  align-items: center
+}
+
+.frontApp .BlogCommentIcon .commentIcon {
+  line-height: 100%
+}
+
+.frontApp .BlogCommentIcon .ficon-bubble-comment-streamline-talk {
+  transform: scaleX(-1)
+}
+
+.frontApp .BlogCommentIcon .nr {
+  margin-left: .6em;
+  font-size: 50%
+}
+
+.frontApp .BlogCommentIcon span {
+  cursor: pointer
+}
+
+.frontApp .BlogCommentIcon .iconLike {
+  margin-left: .5em
+}
+
+.frontApp .BlogCommentIcon .nrOfLikes {
+  margin-left: .4em;
+  font-size: 50%
+}
+
+.frontApp .Slideshow {
+  position: relative;
+  width: 100%;
+  height: 70vh
+}
+
+@media only screen and (max-width: 1000px) {
+  .frontApp .Slideshow {
+    height: auto !important;
+    min-height: 35vh
+  }
+}
+
+.frontApp .Slideshow span.arrow {
+  position: absolute;
+  top: 47%;
+  z-index: 3;
+  opacity: .2
+}
+
+.frontApp .Slideshow span.arrow.leftArr {
+  left: 2%
+}
+
+.frontApp .Slideshow span.arrow.rightArr {
+  right: 2%
+}
+
+.frontApp .Slideshow span.arrow:hover {
+  opacity: 1
+}
+
+.frontApp .Slideshow figure {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  display: block
+}
+
+.frontApp .Slideshow figure .imgWrapper {
+  display: block;
+  height: 100%
+}
+
+.frontApp .Slideshow figure .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain
+}
+
+.frontApp .Slideshow figure.gotVideo {
+  height: 100%;
+  width: 100%
+}
+
+.frontApp .Slideshow figure.gotVideo .imgWrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.frontApp .Slideshow figure.gotVideo .imgWrapper iframe {
+  width: 100%;
+  height: 100%;
+  max-width: none
+}
+
+.frontApp .Slideshow figure.gotVideo .imgWrapper .playIcon {
+  color: #fff;
+  position: absolute;
+  top: calc(50% - 5rem);
+  left: calc(50% - 5rem);
+  display: block;
+  font-size: 10rem;
+  z-index: 2;
+  opacity: .7;
+  cursor: pointer
+}
+
+.frontApp .Slideshow figure.gotVideo .imgWrapper .playIcon:hover {
+  opacity: 1
+}
+
+.frontApp .Slideshow.cover figure .imgWrapper img {
+  object-fit: cover
+}
+
+.frontApp .borders.SingleImage {
+  outline: 1px solid
+}
+
+.frontApp .shadows.SingleImage {
+  box-shadow: 0 .1em 1em 0 rgba(0, 0, 0, .4)
+}
+
+.frontApp .rounded.SingleImage {
+  border-radius: 3%
+}
+
+.frontApp .rounded.SingleImage img {
+  border-radius: 3%
+}
+
+.Store {
+  background: inherit;
+  min-height: 100px
+}
+
+.Store .titleAndDesc {
+  display: flex;
+  flex-direction: column
+}
+
+.Store .StoreFilterRow {
+  display: flex;
+  background: inherit;
+  width: 100%
+}
+
+.Store .StoreFilterRow .searchField {
+  flex-grow: 1;
+  border: none;
+  border-bottom: 1px solid;
+  background-color: inherit !important;
+  border-radius: 0;
+  padding: 10px 0;
+  opacity: .7;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit
+}
+
+.StoreText {
+  margin-left: auto;
+  margin-right: auto
+}
+
+.storeFigureTitlesWrapper {
+  display: flex;
+  flex-direction: column
+}
+
+.bottom1 .storeFigureTitlesWrapper {
+  align-items: center
+}
+
+.StoreFigurePrice .discount {
+  display: block
+}
+
+.Store.filter-hide .StoreFilterRow {
+  display: none
+}
+
+.Store.filter-row .StoreFilterRow {
+  justify-content: space-between;
+  align-items: flex-end
+}
+
+.Store.filter-row .StoreFilterRow .fakeSelect {
+  position: relative;
+  border-bottom: 1px solid;
+  padding: 10px 30px 10px 0;
+  cursor: pointer;
+  background: inherit;
+  white-space: nowrap
+}
+
+.Store.filter-row .StoreFilterRow .fakeSelect ul {
+  display: none
+}
+
+.Store.filter-row .StoreFilterRow .fakeSelect .fakeBg {
+  display: none
+}
+
+.Store.filter-row .StoreFilterRow .fakeSelect span.ficon-angle-down, .Store.filter-row .StoreFilterRow .fakeSelect span.ficon-angle-up {
+  font-size: 150%;
+  position: absolute;
+  top: 10px;
+  right: 0
+}
+
+.Store.filter-row .StoreFilterRow .fakeSelect span.ficon-angle-up {
+  display: none
+}
+
+.Store.filter-row .StoreFilterRow .fakeSelect.active ul {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  display: block;
+  padding: 20px 30px;
+  min-width: 100px;
+  z-index: 2;
+  box-shadow: 0 3px 11px -2px rgba(0, 0, 0, .75);
+  background: inherit;
+  border-radius: 3px
+}
+
+.Store.filter-row .StoreFilterRow .fakeSelect.active ul.toRight {
+  left: auto;
+  right: 0
+}
+
+.Store.filter-row .StoreFilterRow .fakeSelect.active ul li {
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  font-size: 90%
+}
+
+.Store.filter-row .StoreFilterRow .fakeSelect.active ul li.active {
+  border-bottom: 2px solid
+}
+
+.Store.filter-row .StoreFilterRow .fakeSelect.active ul li:hover {
+  border-bottom: 2px solid
+}
+
+.Store.filter-row .StoreFilterRow .fakeSelect.active ul li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0
+}
+
+.Store.filter-row .StoreFilterRow .fakeSelect.active span.ficon-angle-up {
+  display: inline-block
+}
+
+.Store.filter-row .StoreFilterRow .fakeSelect.active span.ficon-angle-down {
+  display: none
+}
+
+.Store.filter-row .StoreFilterRow .fakeSelect.active .fakeBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block
+}
+
+.Store.filter-row .StoreFilterRow .fakeSelect, .Store.filter-row .StoreFilterRow .searchField {
+  margin-right: 20px
+}
+
+@media only screen and (max-width: 999px) {
+  .Store.filter-row .StoreFilterRow {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+  }
+
+  .Store.filter-row .StoreFilterRow .fakeSelect, .Store.filter-row .StoreFilterRow .searchField {
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-right: 0;
+    width: 100%
+  }
+}
+
+.Store.filter-col-right {
+  padding-right: 20vw
+}
+
+.Store.filter-col-right .fakeBg, .Store.filter-col-right .ficon-angle-down, .Store.filter-col-right .ficon-angle-up {
+  display: none
+}
+
+.Store.filter-col-right .StoreFilterRow {
+  position: absolute;
+  right: 0;
+  width: 10vw;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  flex-direction: column;
+  line-height: 170%
+}
+
+.Store.filter-col-right .StoreFilterRow .searchField {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1em
+}
+
+.Store.filter-col-right .StoreFilterRow .fakeSelect {
+  margin-bottom: 1em;
+  margin-top: 1em
+}
+
+.Store.filter-col-right .StoreFilterRow .fakeSelect .catHeader {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: .3em
+}
+
+.Store.filter-col-right .StoreFilterRow .fakeSelect li {
+  cursor: pointer
+}
+
+.StoreCartIcon {
+  margin-left: 1em;
+  cursor: pointer
+}
+
+.Page.hasLeftMenu .StoreCartIcon {
+  margin-left: 0;
+  margin-top: 1em;
+  justify-content: center
+}
+
+.Product {
+  min-height: 100px;
+  background: inherit
+}
+
+.Product .productDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: inherit
+}
+
+.Product .reverseOrderWrapper {
+  display: flex;
+  flex-direction: column;
+  background: inherit
+}
+
+.Product.reverse-order .reverseOrderWrapper {
+  flex-direction: column-reverse
+}
+
+.Product.reverse-order .reverseOrderWrapper .Gallery {
+  margin-bottom: 3em
+}
+
+.ProductBreadCrumbs {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  border-bottom-style: solid;
+  border-width: 0
+}
+
+.ProductBreadCrumbs .breadCrumbs {
+  display: flex;
+  align-items: flex-start
+}
+
+.ProductBreadCrumbs .breadCrumbs span.ficon-angle-right {
+  align-self: flex-end;
+  font-size: 120%;
+  margin: 0 .3em;
+  opacity: .5
+}
+
+.ProductVariants {
+  position: relative;
+  border-bottom: 1px solid;
+  padding: 10px 30px 10px 0;
+  cursor: pointer;
+  background: inherit
+}
+
+.ProductVariants ul {
+  display: none
+}
+
+.ProductVariants .fakeBg {
+  display: none
+}
+
+.ProductVariants span.ficon-angle-down, .ProductVariants span.ficon-angle-up {
+  font-size: 150%;
+  position: absolute;
+  top: 10px;
+  right: 0
+}
+
+.ProductVariants span.ficon-angle-up {
+  display: none
+}
+
+.ProductVariants.active ul {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  display: block;
+  padding: 20px 30px;
+  min-width: 100px;
+  z-index: 2;
+  box-shadow: 0 3px 11px -2px rgba(0, 0, 0, .75);
+  background: inherit;
+  border-radius: 3px
+}
+
+.ProductVariants.active ul.toRight {
+  left: auto;
+  right: 0
+}
+
+.ProductVariants.active ul li {
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  font-size: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.ProductVariants.active ul li.active {
+  border-bottom: 2px solid #4d85e2
+}
+
+.ProductVariants.active ul li:hover {
+  border-bottom: 2px solid #4d85e2
+}
+
+.ProductVariants.active ul li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 6px
+}
+
+.ProductVariants.active span.ficon-angle-up {
+  display: inline-block
+}
+
+.ProductVariants.active span.ficon-angle-down {
+  display: none
+}
+
+.ProductVariants.active .fakeBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block
+}
+
+.ProductText {
+  margin-left: auto;
+  margin-right: auto
+}
+
+.ProductCategories {
+  display: flex
+}
+
+.ProductCategories a {
+  margin-right: .4em;
+  margin-left: .4em
+}
+
+.ProductButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.ProductButton a {
+  cursor: pointer;
+  display: block;
+  font-size: inherit;
+  letter-spacing: inherit;
+  padding: .7em 1.4em
+}
+
+.ClientGallery {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100px;
+  background: inherit;
+  padding-bottom: 100px !important
+}
+
+@media only screen and (max-width: 1000px) {
+  .ClientGallery {
+    display: block !important
+  }
+}
+
+.ClientGallery .titleAndDesc {
+  display: flex;
+  flex-direction: column
+}
+
+.ClientGallery .ClientGallerySearchRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%
+}
+
+.ClientGallery .ClientGallerySearchRow input[type=text] {
+  flex-grow: 1;
+  border: none;
+  border-bottom: 1px solid;
+  background-color: inherit !important;
+  border-radius: 0;
+  padding: 10px 0;
+  opacity: .7;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit
+}
+
+.ClientGallery .ClientGallerySearchRow .filter {
+  margin-left: 2em;
+  padding: 10px 0;
+  border-bottom: 1px solid;
+  cursor: pointer;
+  white-space: nowrap
+}
+
+.ClientGallery .ClientGallerySearchRow .filter.active {
+  border-bottom: 1px solid #4d85e2
+}
+
+@media only screen and (max-width: 1000px) {
+  .ClientGallery .ClientGallerySearchRow {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center
+  }
+
+  .ClientGallery .ClientGallerySearchRow .filter, .ClientGallery .ClientGallerySearchRow input {
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: 0;
+    width: 100%
+  }
+}
+
+.ClientGallery .ClientGallerySelectRow {
+  position: fixed !important;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: inherit;
+  box-shadow: 0 -2px 6px -1px rgba(0, 0, 0, .48);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0
+}
+
+.ClientGallery .ClientGallerySelectRow .selectInfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 5px;
+  border-bottom: 1px solid
+}
+
+.ClientGallery .ClientGallerySelectRow .selectInfo.containsIcon {
+  padding-right: 30px;
+  position: relative
+}
+
+.ClientGallery .ClientGallerySelectRow .selectInfo.containsIcon .selectIcon {
+  font-size: 22px;
+  position: absolute;
+  top: 8px;
+  right: 3px
+}
+
+.ClientGallery .ClientGallerySelectRow .selectInfo .selectImagesWith {
+  align-self: flex-start
+}
+
+.ClientGallery .ClientGallerySelectRow .Button {
+  margin-left: 20px;
+  zoom: .83
+}
+
+@media only screen and (max-width: 1000px) {
+  .ClientGallery .ClientGallerySelectRow {
+    flex-direction: column
+  }
+
+  .ClientGallery .ClientGallerySelectRow .selectInfo {
+    border-bottom: none
+  }
+}
+
+.ClientGallery figure.is-selected .imgWrapper {
+  outline: 5px solid #4d85e2
+}
+
+.ClientGallery figure.is-selected .selectIcon {
+  display: none
+}
+
+.ClientGallery figure.is-selected .deSelectIcon {
+  display: inline-block
+}
+
+.ClientGalleryText {
+  margin-left: auto;
+  margin-right: auto
+}
+
+.ClientGalleryIcons {
+  display: flex;
+  align-items: flex-start
+}
+
+.ClientGalleryIcons .deSelectIcon, .ClientGalleryIcons .selectIcon {
+  font-size: 84%;
+  margin-right: 12px
+}
+
+.ClientGalleryIcons .deSelectIcon {
+  display: none
+}
+
+.ClientGalleryIcons .ficon-bubble-comment-streamline-talk {
+  transform: scaleX(-1)
+}
+
+.ClientGalleryIcons .nr {
+  margin-left: .6em;
+  font-size: 50%;
+  align-self: center
+}
+
+.ClientGalleryIcons span {
+  cursor: pointer
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1
+}
+
+.frontApp .centered1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0
+}
+
+.frontApp .centered1 .hamburger {
+  margin-top: 10px
+}
+
+.frontApp .centered2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0
+}
+
+.frontApp .centered2 .hamburger {
+  margin-top: 10px
+}
+
+.frontApp .borderTop1, .frontApp .borderTop2, .frontApp .borderTop3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 2vw
+}
+
+.frontApp .borderTop1 .first, .frontApp .borderTop2 .first, .frontApp .borderTop3 .first {
+  align-items: flex-start
+}
+
+.frontApp .borderTop1 .first .Header, .frontApp .borderTop2 .first .Header, .frontApp .borderTop3 .first .Header {
+  width: auto
+}
+
+.frontApp .borderTop1 .second, .frontApp .borderTop2 .second, .frontApp .borderTop3 .second {
+  align-items: flex-end
+}
+
+.frontApp .borderTop1 .hamburger, .frontApp .borderTop2 .hamburger, .frontApp .borderTop3 .hamburger {
+  margin-right: 7px;
+  align-self: flex-start
+}
+
+.frontApp .borderTop2 .first {
+  align-items: flex-end
+}
+
+.frontApp .borderTop2 .second {
+  align-items: flex-start
+}
+
+.frontApp .borderTop3 {
+  flex-direction: row-reverse
+}
+
+.frontApp .borderTop3 .first {
+  align-items: flex-end
+}
+
+.frontApp .borderTop3 .second {
+  align-items: flex-start
+}
+
+.frontApp .left1, .frontApp .left2 {
+  box-sizing: border-box;
+  padding: 30px;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1
+}
+
+.frontApp .left1 .MainMenuLinks, .frontApp .left2 .MainMenuLinks {
+  flex-direction: column;
+  justify-content: flex-start;
+  line-height: 1.5em;
+  text-align: center;
+  align-items: normal
+}
+
+.frontApp .left1 .MainMenuLinks .linkWrapper, .frontApp .left2 .MainMenuLinks .linkWrapper {
+  text-align: inherit
+}
+
+.frontApp .left1 .MainMenuLinks a, .frontApp .left2 .MainMenuLinks a {
+  margin-right: 0;
+  margin-left: 0
+}
+
+.frontApp .left1 {
+  overflow-y: auto
+}
+
+.frontApp .left2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center
+}
+
+.frontApp .left2 .pbMenu.second {
+  height: 56%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+.frontApp .left2 .pbMenu.second .MainMenuLinks {
+  max-height: 85%;
+  overflow-y: auto
+}
+
+.frontApp .hidden1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 2vw
+}
+
+.frontApp .hidden1 .first {
+  align-items: flex-start
+}
+
+.frontApp .hidden1 .first .Header {
+  width: auto
+}
+
+.frontApp .hidden1 .second {
+  align-items: flex-end;
+  display: none
+}
+
+.frontApp .hidden1 .hamburger {
+  margin-right: 7px;
+  align-self: flex-start;
+  display: block !important
+}
+
+.frontApp .hidden1 .pbMenu.second {
+  display: none;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  flex-direction: column;
+  z-index: 2;
+  background-color: inherit;
+  opacity: .85;
+  align-items: center;
+  justify-content: center
+}
+
+.frontApp .hidden1 .pbMenu.second .MainMenuLinks {
+  flex-direction: column;
+  line-height: 2em
+}
+
+.frontApp .hidden1 .pbMenu.second.open {
+  display: flex
+}
+
+[v-cloak] {
+  display: none
+}
+
+.frontApp .emptyLink {
+  cursor: default !important;
+  text-decoration: none !important
+}
+
+.frontApp .portfolioboxLink {
+  position: fixed;
+  bottom: 10px;
+  right: 14px;
+  color: currentColor;
+  border-radius: .5rem;
+  opacity: .4;
+  font-size: 80%;
+  letter-spacing: .05rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: "Helvetica Neue", sans-serif;
+  text-transform: uppercase
+}
+
+.frontApp .portfolioboxLink img {
+  height: 20px;
+  margin-right: 10px
+}
+
+.frontApp .portfolioboxLink:hover {
+  opacity: 1
+}
+
+.frontApp .isRelative {
+  position: relative
+}
+
+.frontApp .scrollToTop {
+  cursor: pointer
+}
+
+.frontApp .fourOFourFront {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.frontApp .frontMessagePopup {
+  position: fixed;
+  width: 400px;
+  margin-left: -200px;
+  left: 50%;
+  min-height: 200px;
+  top: 50%;
+  margin-top: -100px;
+  background: inherit;
+  border-radius: 6px;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 0 0 100vh 100vw rgba(0, 0, 0, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+  font-size: 14px
+}
+
+.frontApp .frontMessagePopup .Button span {
+  font-size: 16px;
+  letter-spacing: 3px
+}
+
+@media only screen and (max-width: 400px) {
+  .frontApp .frontMessagePopup {
+    width: 350px;
+    margin-left: -175px
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .frontApp .frontMessagePopup {
+    width: 280px;
+    margin-left: -140px
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .frontApp .frontMessagePopup {
+    width: 250px;
+    margin-left: -125px
+  }
+}
+
+.frontApp .frontMessagePopup .closeX {
+  position: absolute;
+  z-index: 3;
+  opacity: .2;
+  top: 1%;
+  cursor: pointer;
+  display: none;
+  right: 40px
+}
+
+.frontApp .frontMessagePopup .closeX:hover {
+  opacity: 1
+}
+
+.frontApp .frontMessagePopup h1 {
+  margin-bottom: 2em
+}
+
+.frontApp .frontMessagePopup .message {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+}
+
+.frontApp .frontMessagePopup .message p {
+  margin-bottom: 30px;
+  line-height: 160%
+}
+
+.frontApp .frontMessagePopup .message .Button {
+  max-width: 100px
+}
+
+.frontApp .frontMessagePopup .message .btnWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.frontApp .frontMessagePopup .message .btnWrapper .marginRight {
+  margin-right: 30px
+}
+
+.frontApp .countriesSelector.popWrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  font-size: 14px
+}
+
+.frontApp .countriesSelector.popWrapper .popBg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .2)
+}
+
+.frontApp .countriesSelector.popWrapper .popContent {
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, .24);
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  overflow-y: auto;
+  height: auto;
+  max-height: 80vh;
+  box-sizing: border-box
+}
+
+@media only screen and (max-width: 1000px) {
+  .frontApp .countriesSelector.popWrapper .popContent {
+    max-height: 90vh
+  }
+}
+
+.frontApp .countriesSelector.popWrapper .popContent .popClose {
+  position: absolute;
+  right: .5rem;
+  top: .5rem;
+  cursor: pointer;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 100%;
+  user-select: none;
+  display: none
+}
+
+@media only screen and (max-width: 1000px) {
+  .frontApp .countriesSelector.popWrapper .popContent .popClose {
+    display: block
+  }
+}
+
+.frontApp .countriesSelector.popWrapper .popContent .popClose:hover {
+  opacity: .8
+}
+
+.frontApp .countriesSelector.popWrapper .popContent.popSmall {
+  width: 90vw;
+  max-width: 600px;
+  padding: 20px
+}
+
+.frontApp .countriesSelector.popWrapper .popContent .searchWrapper {
+  position: relative
+}
+
+.frontApp .countriesSelector.popWrapper .popContent .searchWrapper .onlyShowInputFront, .frontApp .countriesSelector.popWrapper .popContent .searchWrapper input[type=number], .frontApp .countriesSelector.popWrapper .popContent .searchWrapper input[type=text], .frontApp .countriesSelector.popWrapper .popContent .searchWrapper select, .frontApp .countriesSelector.popWrapper .popContent .searchWrapper textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid;
+  background-color: inherit !important;
+  border-radius: 0;
+  padding: 10px;
+  opacity: .7;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  margin-top: 4px;
+  box-sizing: border-box
+}
+
+.frontApp .countriesSelector.popWrapper .popContent .searchWrapper input[type=text] {
+  padding-left: 4rem
+}
+
+.frontApp .countriesSelector.popWrapper .popContent .searchWrapper .icon {
+  font-size: 2rem;
+  top: 1.1rem;
+  left: 1rem;
+  position: absolute
+}
+
+.frontApp .countriesSelector.popWrapper .popContent ul {
+  margin-top: 20px
+}
+
+.frontApp .countriesSelector.popWrapper .popContent ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d3d3d3;
+  height: 43px;
+  box-sizing: border-box
+}
+
+.frontApp .countriesSelector.popWrapper .popContent ul li .btn {
+  display: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid;
+  border-radius: 5px
+}
+
+@media only screen and (max-width: 1000px) {
+  .frontApp .countriesSelector.popWrapper .popContent ul li .btn {
+    display: block
+  }
+}
+
+.frontApp .countriesSelector.popWrapper .popContent ul li:hover {
+  background: rgba(198, 203, 212, .2)
+}
+
+.frontApp .countriesSelector.popWrapper .popContent ul li:hover .btn {
+  display: inline-block
+}
+
+.frontApp .cookieMessage {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: 6px;
+  padding: 30px 15%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  color: currentColor;
+  -webkit-box-shadow: 0 -5px 12px -5px rgba(0, 0, 0, .4)
+}
+
+.frontApp .cookieMessage .message {
+  color: currentColor
+}
+
+.frontApp .cookieMessage .icon {
+  display: flex;
+  color: currentColor;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  margin-left: 4vw;
+  cursor: pointer;
+  opacity: .6
+}
+
+.frontApp .cookieMessage .icon:hover {
+  opacity: 1
+}
+
+.frontApp .musicPlayer {
+  position: fixed;
+  width: 500px;
+  bottom: 20px;
+  left: calc(50% - 275px);
+  background: inherit;
+  border-radius: 6px;
+  padding: 40px 40px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  color: currentColor;
+  -webkit-box-shadow: 0 2px 11px 0 rgba(128, 152, 213, .25)
+}
+
+.frontApp .musicPlayer .closeX {
+  position: absolute;
+  right: 18px;
+  top: 7px;
+  cursor: pointer
+}
+
+.frontApp .musicPlayer .closeX:after, .frontApp .musicPlayer .closeX:before {
+  height: 20px !important
+}
+
+.frontApp .musicPlayer .iframeWrapper {
+  width: 100%;
+  height: 281px;
+  margin-bottom: 10px
+}
+
+.frontApp .musicPlayer .iframeWrapper iframe {
+  width: 100%;
+  height: 100%
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .musicPlayer {
+    bottom: calc(50% - 45vw);
+    width: 90vw;
+    left: 5vw;
+    box-sizing: border-box;
+    box-shadow: 0 0 100vh 100vw rgba(0, 0, 0, .5);
+    padding: 40px 20px 20px 20px
+  }
+
+  .frontApp .musicPlayer .iframeWrapper {
+    overflow: hidden;
+    padding-top: 56.25%;
+    width: 100%;
+    height: 100%;
+    position: relative
+  }
+
+  .frontApp .musicPlayer .iframeWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0
+  }
+}
+
+.frontApp .musicPlayer .trackInfo {
+  color: currentColor;
+  text-align: center;
+  margin: 0 !important
+}
+
+.frontApp .arrow {
+  border: solid;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 18px;
+  cursor: pointer;
+  color: currentColor
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .arrow {
+    padding: 12px;
+    border-width: 0 3px 3px 0
+  }
+}
+
+.frontApp .arrow.rightArr {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg)
+}
+
+.frontApp .arrow.leftArr {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg)
+}
+
+.frontApp .arrow.upArr {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg)
+}
+
+.frontApp .arrow.downArr {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg)
+}
+
+.frontApp .closeX {
+  color: currentColor;
+  background: 0 0;
+  height: 30px;
+  width: 30px
+}
+
+.frontApp .closeX:after, .frontApp .closeX:before {
+  position: absolute;
+  content: ' ';
+  height: 30px;
+  width: 3px;
+  background-color: currentColor
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .closeX:after, .frontApp .closeX:before {
+    height: 30px;
+    width: 3px
+  }
+}
+
+.frontApp .closeX:before {
+  transform: rotate(45deg);
+  left: 15px
+}
+
+.frontApp .closeX:after {
+  transform: rotate(-45deg);
+  left: 15px
+}
+
+.frontApp .commentPopup, .frontApp .submitPopup {
+  position: fixed;
+  top: 50%;
+  margin-top: -40vh;
+  max-height: 90vh;
+  width: 90vw;
+  max-width: 800px;
+  margin-left: -400px;
+  left: 50%;
+  padding: 50px 80px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  z-index: 5;
+  box-shadow: 0 0 100vh 100vw rgba(0, 0, 0, .5);
+  background-color: inherit;
+  overflow-y: auto
+}
+
+@media only screen and (max-width: 1000px) {
+  .frontApp .commentPopup, .frontApp .submitPopup {
+    margin-left: 0;
+    left: 5%;
+    top: 5%;
+    margin-top: 0;
+    padding: 30px 5%
+  }
+}
+
+.frontApp .commentPopup .closeX, .frontApp .submitPopup .closeX {
+  position: absolute;
+  z-index: 3;
+  opacity: .2;
+  top: 10px;
+  right: 25px;
+  cursor: pointer
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .commentPopup .closeX, .frontApp .submitPopup .closeX {
+    right: 6.5%
+  }
+}
+
+.frontApp .commentPopup .closeX:hover, .frontApp .submitPopup .closeX:hover {
+  opacity: 1
+}
+
+.frontApp .commentPopup .cgContent figure.commentImg, .frontApp .submitPopup .cgContent figure.commentImg {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 40px;
+  box-shadow: inset 400px 400px 400px 400px rgba(0, 0, 0, .1);
+  display: flex;
+  justify-content: center
+}
+
+.frontApp .commentPopup .cgContent figure.commentImg img, .frontApp .submitPopup .cgContent figure.commentImg img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center
+}
+
+.frontApp .commentPopup .cgContent .hasErrors .error, .frontApp .submitPopup .cgContent .hasErrors .error {
+  border: 1px solid red
+}
+
+.frontApp .commentPopup .cgContent h1, .frontApp .submitPopup .cgContent h1 {
+  margin-bottom: 40px;
+  text-align: center
+}
+
+.frontApp .commentPopup .cgContent .Button, .frontApp .submitPopup .cgContent .Button {
+  margin-top: 20px
+}
+
+.frontApp .commentPopup .cgContent textarea, .frontApp .submitPopup .cgContent textarea {
+  height: 85px
+}
+
+.frontApp .commentPopup .cgContent .comments, .frontApp .submitPopup .cgContent .comments {
+  margin-top: 40px;
+  text-align: center
+}
+
+.frontApp .commentPopup .cgContent .comments .comment, .frontApp .submitPopup .cgContent .comments .comment {
+  border-top: 1px solid currentColor;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  letter-spacing: .03em
+}
+
+.frontApp .commentPopup .cgContent .comments .comment:last-child, .frontApp .submitPopup .cgContent .comments .comment:last-child {
+  padding-bottom: 20px;
+  border-bottom: 1px solid currentColor
+}
+
+.frontApp .commentPopup .cgContent .comments .comment .nameAndDate, .frontApp .submitPopup .cgContent .comments .comment .nameAndDate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px
+}
+
+.frontApp .commentPopup .cgContent .comments .comment .nameAndDate .name, .frontApp .submitPopup .cgContent .comments .comment .nameAndDate .name {
+  margin-right: 15px;
+  font-weight: 700
+}
+
+.frontApp .commentPopup .cgContent .comments .comment .nameAndDate .date, .frontApp .submitPopup .cgContent .comments .comment .nameAndDate .date {
+  opacity: .6;
+  font-size: 80%
+}
+
+.frontApp, body, html {
+  min-height: 100%
+}
+
+.Page {
+  position: relative
+}
+
+.Page .mainContentMenuAdjusted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: inherit
+}
+
+.Page .MainMenu {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.Page .routerViewWrapper {
+  display: flex;
+  flex-direction: column
+}
+
+.Page section {
+  width: 100%;
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.Page .pbElements {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+#frontApp {
+  font-size: 16px
+}
+
+@media only screen and (max-width: 1200px) {
+  #frontApp {
+    font-size: 14px
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  #frontApp {
+    font-size: 17px
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  #frontApp {
+    font-size: 17px
+  }
+}
+
+body .frontApp .Page.hasLeftMenu .MainMenu {
+  width: 300px
+}
+
+body .frontApp .Page.hasLeftMenu .mainContentMenuAdjusted {
+  margin-left: 300px;
+  max-width: calc(100% - 300px)
+}
+
+@media only screen and (max-width: 999px) {
+  body .frontApp .Page.hasLeftMenu .MainMenu {
+    width: 100vw;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative !important;
+    top: 0;
+    left: 0
+  }
+
+  body .frontApp .Page.hasLeftMenu .MainMenu .hamburger {
+    margin-top: 10px
+  }
+
+  body .frontApp .Page.hasLeftMenu .mainContentMenuAdjusted {
+    margin-left: 0;
+    max-width: none
+  }
+}
+
+.frontApp .MainMenu {
+  background-color: inherit
+}
+
+.frontApp .MainMenu .hamburger {
+  cursor: pointer;
+  display: none;
+  z-index: 2
+}
+
+.frontApp .MainMenu .hamburger .bar1, .frontApp .MainMenu .hamburger .bar2, .frontApp .MainMenu .hamburger .bar3 {
+  width: 35px;
+  height: 5px;
+  border-radius: 10px;
+  border-top: 5px solid;
+  color: inherit;
+  margin: 6px 0;
+  transition: .4s
+}
+
+.frontApp .MainMenu .hamburger.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px)
+}
+
+.frontApp .MainMenu .hamburger.open .bar2 {
+  opacity: 0
+}
+
+.frontApp .MainMenu .hamburger.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px)
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .MainMenu {
+    background-color: inherit
+  }
+
+  .frontApp .MainMenu .hamburger {
+    display: block
+  }
+
+  .frontApp .MainMenu .hamburger.open {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 4
+  }
+
+  .frontApp .MainMenu .pbMenu.second {
+    background-color: inherit;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    flex-direction: column;
+    z-index: 3;
+    opacity: .9;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto
+  }
+
+  .frontApp .MainMenu .pbMenu.second .MainMenuLinks {
+    flex-direction: column;
+    line-height: 150%;
+    max-height: 70vh;
+    overflow-y: auto;
+    width: 100%;
+    justify-content: flex-start
+  }
+
+  .frontApp .MainMenu .pbMenu.second.open {
+    display: flex
+  }
+}
+
+.admin .frontApp .portfolioboxLink {
+  position: absolute
+}
+
+img.lazy-img {
+  opacity: 0
+}
+
+img.lazy-img[lazy=loaded] {
+  opacity: 1
+}
+
+.Section {
+  opacity: 0
+}
+
+.inViewPoint .Section {
+  opacity: 1
+}
+
+.inViewPoint .fade-in:not(.lazy-img) {
+  -webkit-animation: fade-in 1s cubic-bezier(.55, .085, .68, .53) both;
+  animation: fade-in 1s cubic-bezier(.55, .085, .68, .53) both
+}
+
+.inViewPoint .fade-in [lazy=loaded] {
+  outline: 10px red;
+  -webkit-animation: fade-in 1s cubic-bezier(.55, .085, .68, .53) both;
+  animation: fade-in 1s cubic-bezier(.55, .085, .68, .53) both
+}
+
+.inViewPoint .scale-in-center:not(.lazy-img) {
+  -webkit-animation: scale-in-center .5s cubic-bezier(.25, .46, .45, .94) both;
+  animation: scale-in-center .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.inViewPoint .scale-in-center [lazy=loaded] {
+  -webkit-animation: scale-in-center .5s cubic-bezier(.25, .46, .45, .94) both;
+  animation: scale-in-center .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.inViewPoint .rotate-in-hor:not(.lazy-img) {
+  -webkit-animation: rotate-in-hor .5s cubic-bezier(.25, .46, .45, .94) both;
+  animation: rotate-in-hor .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.inViewPoint .rotate-in-hor [lazy=loaded] {
+  -webkit-animation: rotate-in-hor .5s cubic-bezier(.25, .46, .45, .94) both;
+  animation: rotate-in-hor .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.inViewPoint .flip-in-hor-top:not(.lazy-img) {
+  -webkit-animation: flip-in-hor-top .5s cubic-bezier(.25, .46, .45, .94) both;
+  animation: flip-in-hor-top .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.inViewPoint .flip-in-hor-top [lazy=loaded] {
+  -webkit-animation: flip-in-hor-top .5s cubic-bezier(.25, .46, .45, .94) both;
+  animation: flip-in-hor-top .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.inViewPoint .flip-in-ver-right:not(.lazy-img) {
+  -webkit-animation: flip-in-ver-right .5s cubic-bezier(.25, .46, .45, .94) both;
+  animation: flip-in-ver-right .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.inViewPoint .flip-in-ver-right [lazy=loaded] {
+  -webkit-animation: flip-in-ver-right .5s cubic-bezier(.25, .46, .45, .94) both;
+  animation: flip-in-ver-right .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.inViewPoint .slide-in-right:not(.lazy-img) {
+  -webkit-animation: slide-in-right .5s cubic-bezier(.25, .46, .45, .94) both;
+  animation: slide-in-right .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.inViewPoint .slide-in-right [lazy=loaded] {
+  -webkit-animation: slide-in-right .5s cubic-bezier(.25, .46, .45, .94) both;
+  animation: slide-in-right .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.inViewPoint .slide-in-bottom:not(.lazy-img) {
+  -webkit-animation: slide-in-bottom .5s cubic-bezier(.25, .46, .45, .94) both;
+  animation: slide-in-bottom .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.inViewPoint .slide-in-bottom [lazy=loaded] {
+  -webkit-animation: slide-in-bottom .5s cubic-bezier(.25, .46, .45, .94) both;
+  animation: slide-in-bottom .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.inViewPoint .slide-in-left:not(.lazy-img) {
+  -webkit-animation: slide-in-left .5s cubic-bezier(.25, .46, .45, .94) both;
+  animation: slide-in-left .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.inViewPoint .slide-in-left [lazy=loaded] {
+  -webkit-animation: slide-in-left .5s cubic-bezier(.25, .46, .45, .94) both;
+  animation: slide-in-left .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.inViewPoint .puff-in-center:not(.lazy-img) {
+  -webkit-animation: puff-in-center .7s cubic-bezier(.47, 0, .745, .715) both;
+  animation: puff-in-center .7s cubic-bezier(.47, 0, .745, .715) both
+}
+
+.inViewPoint .puff-in-center [lazy=loaded] {
+  -webkit-animation: puff-in-center .7s cubic-bezier(.47, 0, .745, .715) both;
+  animation: puff-in-center .7s cubic-bezier(.47, 0, .745, .715) both
+}
+
+.inViewPoint .flicker-in-1:not(.lazy-img) {
+  -webkit-animation: flicker-in-1 2s linear both;
+  animation: flicker-in-1 2s linear both
+}
+
+.inViewPoint .flicker-in-1 [lazy=loaded] {
+  -webkit-animation: flicker-in-1 2s linear both;
+  animation: flicker-in-1 2s linear both
+}
+
+.inViewPoint .text-tracking-in-expand:not(.lazy-img) {
+  -webkit-animation: text-tracking-in-expand .7s cubic-bezier(.215, .61, .355, 1) both;
+  animation: text-tracking-in-expand .7s cubic-bezier(.215, .61, .355, 1) both
+}
+
+.inViewPoint .text-tracking-in-expand [lazy=loaded] {
+  -webkit-animation: text-tracking-in-expand .7s cubic-bezier(.215, .61, .355, 1) both;
+  animation: text-tracking-in-expand .7s cubic-bezier(.215, .61, .355, 1) both
+}
+
+.inViewPoint .text-tracking-in-contract:not(.lazy-img) {
+  -webkit-animation: text-tracking-in-contract .8s cubic-bezier(.215, .61, .355, 1) both;
+  animation: text-tracking-in-contract .8s cubic-bezier(.215, .61, .355, 1) both
+}
+
+.inViewPoint .text-tracking-in-contract [lazy=loaded] {
+  -webkit-animation: text-tracking-in-contract .8s cubic-bezier(.215, .61, .355, 1) both;
+  animation: text-tracking-in-contract .8s cubic-bezier(.215, .61, .355, 1) both
+}
+
+.inViewPoint .text-focus-in-expand:not(.lazy-img) {
+  -webkit-animation: text-focus-in-expand .8s cubic-bezier(.25, .46, .45, .94) both;
+  animation: text-focus-in-expand .8s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.inViewPoint .text-focus-in-expand [lazy=loaded] {
+  -webkit-animation: text-focus-in-expand .8s cubic-bezier(.25, .46, .45, .94) both;
+  animation: text-focus-in-expand .8s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.inViewPoint .vibrate-1:not(.lazy-img) {
+  -webkit-animation: vibrate-1 .3s linear infinite both;
+  animation: vibrate-1 .3s linear infinite both
+}
+
+.inViewPoint .vibrate-1 [lazy=loaded] {
+  -webkit-animation: vibrate-1 .3s linear infinite both;
+  animation: vibrate-1 .3s linear infinite both
+}
+
+.shake-top:not(.lazy-img) {
+  -webkit-animation: shake-top .8s cubic-bezier(.455, .03, .515, .955) both;
+  animation: shake-top .8s cubic-bezier(.455, .03, .515, .955) both
+}
+
+.shake-top [lazy=loaded] {
+  -webkit-animation: shake-top .8s cubic-bezier(.455, .03, .515, .955) both;
+  animation: shake-top .8s cubic-bezier(.455, .03, .515, .955) both
+}
+
+.jello-horizontal:not(.lazy-img) {
+  -webkit-animation: jello-horizontal .9s both;
+  animation: jello-horizontal .9s both
+}
+
+.jello-horizontal [lazy=loaded] {
+  -webkit-animation: jello-horizontal .9s both;
+  animation: jello-horizontal .9s both
+}
+
+.bounce-top:not(.lazy-img) {
+  -webkit-animation: bounce-top .9s both;
+  animation: bounce-top .9s both
+}
+
+.bounce-top [lazy=loaded] {
+  -webkit-animation: bounce-top .9s both;
+  animation: bounce-top .9s both
+}
+
+.heartbeat:not(.lazy-img) {
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both
+}
+
+.heartbeat [lazy=loaded] {
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both
+}
+
+.inViewPoint .background-zoom-top:not(.lazy-img) {
+  -webkit-animation: background-zoom-top 5s ease-out both;
+  animation: background-zoom-top 5s ease-out both
+}
+
+.inViewPoint .background-zoom-top [lazy=loaded] {
+  -webkit-animation: background-zoom-top 5s ease-out both;
+  animation: background-zoom-top 5s ease-out both
+}
+
+.inViewPoint .background-zoom-bottom:not(.lazy-img) {
+  -webkit-animation: background-zoom-bottom 2s linear both;
+  animation: background-zoom-bottom 2s linear both
+}
+
+.inViewPoint .background-zoom-bottom [lazy=loaded] {
+  -webkit-animation: background-zoom-bottom 2s linear both;
+  animation: background-zoom-bottom 2s linear both
+}
+
+.inViewPoint .background-zoom-bottom.SingleImageBg .frontEditBtn {
+  top: 8% !important
+}
+
+.inViewPoint .background-color-change-5x:not(.lazy-img) {
+  -webkit-animation: background-color-change-5x 8s linear infinite alternate both;
+  animation: background-color-change-5x 8s linear infinite alternate both
+}
+
+.inViewPoint .background-color-change-5x [lazy=loaded] {
+  -webkit-animation: background-color-change-5x 8s linear infinite alternate both;
+  animation: background-color-change-5x 8s linear infinite alternate both
+}
+
+@-webkit-keyframes background-zoom-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top
+  }
+}
+
+@keyframes background-zoom-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top
+  }
+}
+
+@-webkit-keyframes background-zoom-bottom {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+  100% {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15)
+  }
+}
+
+@keyframes background-zoom-bottom {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+  100% {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15)
+  }
+}
+
+@-webkit-keyframes background-color-change-5x {
+  0% {
+    background: #19dcea
+  }
+  25% {
+    background: #b22cff
+  }
+  50% {
+    background: #ea2222
+  }
+  75% {
+    background: #f5be10
+  }
+  100% {
+    background: #3bd80d
+  }
+}
+
+@keyframes background-color-change-5x {
+  0% {
+    background: #19dcea
+  }
+  25% {
+    background: #b22cff
+  }
+  50% {
+    background: #ea2222
+  }
+  75% {
+    background: #f5be10
+  }
+  100% {
+    background: #3bd80d
+  }
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1
+  }
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes rotate-in-hor {
+  0% {
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 1
+  }
+}
+
+@keyframes rotate-in-hor {
+  0% {
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes flip-in-hor-top {
+  0% {
+    -webkit-transform: rotateX(-80deg);
+    transform: rotateX(-80deg);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 1
+  }
+}
+
+@keyframes flip-in-hor-top {
+  0% {
+    -webkit-transform: rotateX(-80deg);
+    transform: rotateX(-80deg);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes flip-in-ver-right {
+  0% {
+    -webkit-transform: rotateY(-80deg);
+    transform: rotateY(-80deg);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    opacity: 1
+  }
+}
+
+@keyframes flip-in-ver-right {
+  0% {
+    -webkit-transform: rotateY(-80deg);
+    transform: rotateY(-80deg);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1
+  }
+}
+
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    opacity: 0
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes flicker-in-1 {
+  0% {
+    opacity: 0
+  }
+  10% {
+    opacity: 0
+  }
+  10.1% {
+    opacity: 1
+  }
+  10.2% {
+    opacity: 0
+  }
+  20% {
+    opacity: 0
+  }
+  20.1% {
+    opacity: 1
+  }
+  20.6% {
+    opacity: 0
+  }
+  30% {
+    opacity: 0
+  }
+  30.1% {
+    opacity: 1
+  }
+  30.5% {
+    opacity: 1
+  }
+  30.6% {
+    opacity: 0
+  }
+  45% {
+    opacity: 0
+  }
+  45.1% {
+    opacity: 1
+  }
+  50% {
+    opacity: 1
+  }
+  55% {
+    opacity: 1
+  }
+  55.1% {
+    opacity: 0
+  }
+  57% {
+    opacity: 0
+  }
+  57.1% {
+    opacity: 1
+  }
+  60% {
+    opacity: 1
+  }
+  60.1% {
+    opacity: 0
+  }
+  65% {
+    opacity: 0
+  }
+  65.1% {
+    opacity: 1
+  }
+  75% {
+    opacity: 1
+  }
+  75.1% {
+    opacity: 0
+  }
+  77% {
+    opacity: 0
+  }
+  77.1% {
+    opacity: 1
+  }
+  85% {
+    opacity: 1
+  }
+  85.1% {
+    opacity: 0
+  }
+  86% {
+    opacity: 0
+  }
+  86.1% {
+    opacity: 1
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes flicker-in-1 {
+  0% {
+    opacity: 0
+  }
+  10% {
+    opacity: 0
+  }
+  10.1% {
+    opacity: 1
+  }
+  10.2% {
+    opacity: 0
+  }
+  20% {
+    opacity: 0
+  }
+  20.1% {
+    opacity: 1
+  }
+  20.6% {
+    opacity: 0
+  }
+  30% {
+    opacity: 0
+  }
+  30.1% {
+    opacity: 1
+  }
+  30.5% {
+    opacity: 1
+  }
+  30.6% {
+    opacity: 0
+  }
+  45% {
+    opacity: 0
+  }
+  45.1% {
+    opacity: 1
+  }
+  50% {
+    opacity: 1
+  }
+  55% {
+    opacity: 1
+  }
+  55.1% {
+    opacity: 0
+  }
+  57% {
+    opacity: 0
+  }
+  57.1% {
+    opacity: 1
+  }
+  60% {
+    opacity: 1
+  }
+  60.1% {
+    opacity: 0
+  }
+  65% {
+    opacity: 0
+  }
+  65.1% {
+    opacity: 1
+  }
+  75% {
+    opacity: 1
+  }
+  75.1% {
+    opacity: 0
+  }
+  77% {
+    opacity: 0
+  }
+  77.1% {
+    opacity: 1
+  }
+  85% {
+    opacity: 1
+  }
+  85.1% {
+    opacity: 0
+  }
+  86% {
+    opacity: 0
+  }
+  86.1% {
+    opacity: 1
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes text-tracking-in-expand {
+  0% {
+    letter-spacing: -.5em;
+    opacity: 0
+  }
+  40% {
+    opacity: .6
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes text-tracking-in-expand {
+  0% {
+    letter-spacing: -.5em;
+    opacity: 0
+  }
+  40% {
+    opacity: .6
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes text-tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0
+  }
+  40% {
+    opacity: .6
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1
+  }
+}
+
+@keyframes text-tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0
+  }
+  40% {
+    opacity: .6
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes text-focus-in-expand {
+  0% {
+    letter-spacing: -.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1
+  }
+}
+
+@keyframes text-focus-in-expand {
+  0% {
+    letter-spacing: -.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0)
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px)
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px)
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px)
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px)
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0)
+  }
+}
+
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0)
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px)
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px)
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px)
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px)
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0)
+  }
+}
+
+@-webkit-keyframes shake-top {
+  0%, 100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg)
+  }
+  20%, 40%, 60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg)
+  }
+  30%, 50%, 70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg)
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg)
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg)
+  }
+}
+
+@keyframes shake-top {
+  0%, 100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0
+  }
+  10% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg)
+  }
+  20%, 40%, 60% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg)
+  }
+  30%, 50%, 70% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg)
+  }
+  80% {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg)
+  }
+  90% {
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg)
+  }
+}
+
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, .75, 1);
+    transform: scale3d(1.25, .75, 1)
+  }
+  40% {
+    -webkit-transform: scale3d(.75, 1.25, 1);
+    transform: scale3d(.75, 1.25, 1)
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, .85, 1);
+    transform: scale3d(1.15, .85, 1)
+  }
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1)
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1)
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+  }
+}
+
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, .75, 1);
+    transform: scale3d(1.25, .75, 1)
+  }
+  40% {
+    -webkit-transform: scale3d(.75, 1.25, 1);
+    transform: scale3d(.75, 1.25, 1)
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, .85, 1);
+    transform: scale3d(1.15, .85, 1)
+  }
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1)
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1)
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+  }
+}
+
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1
+  }
+  24% {
+    opacity: 1
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in
+  }
+  25%, 55%, 75%, 87% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1
+  }
+}
+
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1
+  }
+  24% {
+    opacity: 1
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in
+  }
+  25%, 55%, 75%, 87% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out
+  }
+  10% {
+    -webkit-transform: scale(.91);
+    transform: scale(.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in
+  }
+  17% {
+    -webkit-transform: scale(.98);
+    transform: scale(.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out
+  }
+  33% {
+    -webkit-transform: scale(.87);
+    transform: scale(.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out
+  }
+  10% {
+    -webkit-transform: scale(.91);
+    transform: scale(.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in
+  }
+  17% {
+    -webkit-transform: scale(.98);
+    transform: scale(.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out
+  }
+  33% {
+    -webkit-transform: scale(.87);
+    transform: scale(.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
+}
+
+.frontApp .zoom-small figure img {
+  transition: transform 1s ease
+}
+
+.frontApp .zoom-small figure:hover img {
+  transform: scale(1.055)
+}
+
+.frontApp .zoom-large figure img {
+  transition: transform 3s ease
+}
+
+.frontApp .zoom-large figure:hover img {
+  transform: scale(2)
+}
+
+.frontApp .black-white figure img {
+  transition: filter .7s ease
+}
+
+.frontApp .black-white figure:hover img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%)
+}
+
+.frontApp .sepia figure img {
+  transition: filter 2s ease
+}
+
+.frontApp .sepia figure:hover img {
+  -webkit-filter: sepia(.7);
+  filter: sepia(.7)
+}
+
+.frontApp .zoom-small:not(.Gallery):not(.Slideshow) {
+  transition: transform 1s ease
+}
+
+.frontApp .zoom-small:not(.Gallery):not(.Slideshow):hover {
+  transform: scale(1.02)
+}
+
+.frontApp .zoom-large:not(.Gallery):not(.Slideshow) {
+  transition: transform 3s ease
+}
+
+.frontApp .zoom-large:not(.Gallery):not(.Slideshow):hover {
+  transform: scale(1.06)
+}
+
+.frontApp .black-white:not(.Gallery):not(.Slideshow) {
+  transition: filter 1s ease
+}
+
+.frontApp .black-white:not(.Gallery):not(.Slideshow):hover {
+  filter: grayscale(100%)
+}
+
+.frontApp .sepia:not(.Gallery):not(.Slideshow) {
+  transition: filter 1s ease
+}
+
+.frontApp .sepia:not(.Gallery):not(.Slideshow):hover {
+  filter: sepia(.7)
+}
+
+.frontApp .Page figure .imgWrapper {
+  display: block;
+  overflow: hidden
+}
+
+.frontApp .Page figure .imgWrapper img {
+  display: block
+}
+
+.frontApp .Page .Item .imgWrapper .playIcon {
+  display: none
+}
+
+.frontApp .Page .Item .imgWrapper.gotVideo {
+  position: relative
+}
+
+.frontApp .Page .Item .imgWrapper.gotVideo .playIcon {
+  color: #fff;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: block;
+  font-size: 2.5rem;
+  z-index: 2;
+  opacity: .7
+}
+
+.frontApp .Page .Item .imgWrapper.gotVideo:hover .playIcon {
+  opacity: 1
+}
+
+.frontApp .Page .Item .imgWrapper.gotVideo.playingVideo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.frontApp .Page .Item .imgWrapper.gotVideo.playingVideo iframe {
+  width: 100%;
+  height: 100%;
+  max-width: none
+}
+
+.frontApp .Page .galleryWithResponsiveVideo .Item .imgWrapper.gotVideo {
+  position: relative
+}
+
+.frontApp .Page .galleryWithResponsiveVideo .Item .imgWrapper.gotVideo .playIcon {
+  color: #fff;
+  position: absolute;
+  top: calc(50% - 2.5rem);
+  left: calc(50% - 2.5rem);
+  display: block;
+  font-size: 5rem;
+  z-index: 2;
+  opacity: .7;
+  cursor: pointer
+}
+
+.frontApp .Page .galleryWithResponsiveVideo .Item .imgWrapper.gotVideo .playIcon:hover {
+  opacity: 1
+}
+
+.frontApp .Page .galleryWithResponsiveVideo .Item .imgWrapper.gotVideo.playingVideo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 56.25%
+}
+
+.frontApp .Page .galleryWithResponsiveVideo .Item .imgWrapper.gotVideo.playingVideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0
+}
+
+.frontApp .Page .horizontal .galleryWithResponsiveVideo .Item .imgWrapper.gotVideo.playingVideo {
+  min-width: 60vw
+}
+
+.frontApp .Page .sameRatio {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1vw;
+  width: 100%
+}
+
+.frontApp .Page .sameRatio figure .imgWrapper {
+  height: 10vw
+}
+
+.frontApp .Page .sameRatio figure .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .sameRatio {
+    grid-template-columns: repeat(1, 1fr) !important
+  }
+
+  .frontApp .Page .sameRatio figure {
+    margin-bottom: 3vh
+  }
+
+  .frontApp .Page .sameRatio figure .imgWrapper {
+    height: 61.8vw !important
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .sameRatio.square figure .imgWrapper {
+    height: 90vw !important
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .sameRatio.portraits figure .imgWrapper {
+    height: 133vw !important
+  }
+}
+
+.frontApp .Page .sameRatio.circleRatio img {
+  border-radius: 50em
+}
+
+.frontApp .Page .evenRowsSection {
+  overflow-y: hidden
+}
+
+.frontApp .Page .evenRows {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%
+}
+
+.frontApp .Page .evenRows figure .imgWrapper {
+  height: 15vw
+}
+
+.frontApp .Page .evenRows figure .imgWrapper img {
+  width: auto;
+  height: 100%
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .evenRows {
+    display: block
+  }
+
+  .frontApp .Page .evenRows figure {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 3vh !important;
+    width: 100%
+  }
+
+  .frontApp .Page .evenRows figure .imgWrapper {
+    height: auto !important;
+    width: 100% !important
+  }
+
+  .frontApp .Page .evenRows figure .imgWrapper img {
+    width: 100%
+  }
+}
+
+.frontApp .Page .alignBottom {
+  text-align: center
+}
+
+.frontApp .Page .alignBottom figure {
+  display: inline-block;
+  width: 15vw;
+  margin: 0 1vw 2vw 1vw;
+  position: relative
+}
+
+.frontApp .Page .alignBottom figure .imgWrapper img {
+  width: 100%;
+  height: auto
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .alignBottom figure {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 3vh !important
+  }
+}
+
+.frontApp .Page .alignCenter {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 3vw;
+  word-break: break-word
+}
+
+.frontApp .Page .alignCenter figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.frontApp .Page .alignCenter figure .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .alignCenter {
+    display: block
+  }
+
+  .frontApp .Page .alignCenter figure {
+    margin-bottom: 3vh !important
+  }
+}
+
+.frontApp .Page .puzzle {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0
+}
+
+.frontApp .Page .puzzle figure {
+  height: 21vw;
+  position: relative
+}
+
+.frontApp .Page .puzzle figure .imgWrapper {
+  width: 100%;
+  height: 100%
+}
+
+.frontApp .Page .puzzle figure .imgWrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%
+}
+
+.frontApp .Page .puzzle figure:nth-child(8n+1) {
+  grid-row-start: span 2;
+  grid-column-start: span 2;
+  height: 100%
+}
+
+.frontApp .Page .puzzle figure:nth-child(8n+4) {
+  grid-column-start: 3;
+  grid-column-end: 5
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .puzzle {
+    display: block;
+    width: 100% !important
+  }
+
+  .frontApp .Page .puzzle figure {
+    margin-bottom: 3vh !important;
+    height: auto !important
+  }
+}
+
+.frontApp .Page .random {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 2vw;
+  grid-row-gap: 1vw
+}
+
+.frontApp .Page .random figure {
+  grid-column-start: span 4;
+  text-align: center;
+  position: relative
+}
+
+.frontApp .Page .random figure .imgWrapper img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%
+}
+
+.frontApp .Page .random figure:nth-child(9n+1) {
+  margin-bottom: 18%
+}
+
+.frontApp .Page .random figure:nth-child(9n+2) {
+  margin: 36% 12% 0 18%
+}
+
+.frontApp .Page .random figure:nth-child(9n+3) {
+  margin: 6% 0 0 0
+}
+
+.frontApp .Page .random figure:nth-child(9n+4) {
+  margin: 0 0 12% 0;
+  grid-column-start: span 3
+}
+
+.frontApp .Page .random figure:nth-child(9n+5) {
+  margin: 14% 0;
+  grid-column-start: span 5
+}
+
+.frontApp .Page .random figure:nth-child(9n+6) {
+  margin: 30% 0 15% 10%;
+  grid-column-start: span 4
+}
+
+.frontApp .Page .random figure:nth-child(9n+7) {
+  margin: 24% 9% 20% 0;
+  grid-column-start: span 5
+}
+
+.frontApp .Page .random figure:nth-child(9n+8) {
+  margin: 0 10% 0 4%;
+  grid-column-start: span 4
+}
+
+.frontApp .Page .random figure:nth-child(9n+9) {
+  margin: 28% 0 0 0;
+  grid-column-start: span 3
+}
+
+.frontApp .Page .random figure:nth-last-child(-n+3) {
+  margin-bottom: 0
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .random {
+    display: block;
+    width: 100% !important
+  }
+
+  .frontApp .Page .random figure {
+    margin: 0 !important;
+    margin-bottom: 3vh !important;
+    height: auto !important
+  }
+}
+
+.frontApp .Page .horizontal {
+  position: relative
+}
+
+.frontApp .Page .horizontal span.arrow {
+  position: absolute !important;
+  top: 47%;
+  z-index: 3;
+  opacity: .2
+}
+
+.frontApp .Page .horizontal span.arrow.leftArr {
+  left: 2%
+}
+
+.frontApp .Page .horizontal span.arrow.rightArr {
+  right: 2%
+}
+
+.frontApp .Page .horizontal span.arrow:hover {
+  opacity: 1
+}
+
+.frontApp .Page .horizontal .Gallery {
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  align-items: center
+}
+
+.frontApp .Page .horizontal .Gallery figure {
+  margin-right: 1vw;
+  position: relative;
+  flex-shrink: 0;
+  max-width: none
+}
+
+.frontApp .Page .horizontal .Gallery figure .imgWrapper {
+  display: block
+}
+
+.frontApp .Page .horizontal .Gallery figure .imgWrapper img {
+  display: block;
+  height: 70vh;
+  width: auto
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .horizontal span.arrow {
+    display: none
+  }
+
+  .frontApp .Page .horizontal .Gallery {
+    display: block;
+    flex-wrap: initial
+  }
+
+  .frontApp .Page .horizontal .Gallery figure {
+    margin-right: 0 !important;
+    max-width: 100%
+  }
+
+  .frontApp .Page .horizontal .Gallery figure .imgWrapper img {
+    height: auto !important;
+    width: 100%
+  }
+}
+
+.frontApp .Page .horizontal2 .Gallery {
+  align-items: center
+}
+
+.frontApp .Page .horizontal2 .Gallery figure:nth-child(2n) .imgWrapper img {
+  height: 40vh !important
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .horizontal2 .Gallery figure:nth-child(2n) .imgWrapper img {
+    height: auto !important
+  }
+}
+
+.frontApp .Page .horizontal3 .Gallery figure:nth-child(9n+1) {
+  margin-top: 5vh
+}
+
+.frontApp .Page .horizontal3 .Gallery figure:nth-child(9n+1) .imgWrapper img {
+  height: 40vh !important
+}
+
+.frontApp .Page .horizontal3 .Gallery figure:nth-child(9n+2) {
+  margin-left: -16vw
+}
+
+.frontApp .Page .horizontal3 .Gallery figure:nth-child(9n+3) {
+  margin-top: 2vh
+}
+
+.frontApp .Page .horizontal3 .Gallery figure:nth-child(9n+3) .imgWrapper img {
+  height: 65vh !important
+}
+
+.frontApp .Page .horizontal3 .Gallery figure:nth-child(9n+4) {
+  margin-top: 10vh;
+  margin-left: -10vw
+}
+
+.frontApp .Page .horizontal3 .Gallery figure:nth-child(9n+4) .imgWrapper img {
+  height: 55vh !important
+}
+
+.frontApp .Page .horizontal3 .Gallery figure:nth-child(9n+5) {
+  margin-top: 0
+}
+
+.frontApp .Page .horizontal3 .Gallery figure:nth-child(9n+5) .imgWrapper img {
+  height: 45vh !important
+}
+
+.frontApp .Page .horizontal3 .Gallery figure:nth-child(9n+6) {
+  margin-top: -2vh
+}
+
+.frontApp .Page .horizontal3 .Gallery figure:nth-child(9n+7) {
+  margin-top: 15vh;
+  margin-left: -10vw
+}
+
+.frontApp .Page .horizontal3 .Gallery figure:nth-child(9n+7) .imgWrapper img {
+  height: 35vh !important
+}
+
+.frontApp .Page .horizontal3 .Gallery figure:nth-child(9n+8) {
+  margin-top: 20vh
+}
+
+.frontApp .Page .horizontal3 .Gallery figure:nth-child(9n+8) .imgWrapper img {
+  height: 40vh !important
+}
+
+.frontApp .Page .horizontal3 .Gallery figure:nth-child(9n+9) {
+  margin-top: 0;
+  margin-left: -5vw
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .horizontal3 .Gallery figure.Item {
+    margin-top: 0 !important;
+    margin-left: 0 !important
+  }
+
+  .frontApp .Page .horizontal3 .Gallery figure.Item .imgWrapper img {
+    height: auto !important
+  }
+}
+
+.frontApp .Page .vertical {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-gap: 4vh
+}
+
+.frontApp .Page .vertical figure .imgWrapper {
+  text-align: center;
+  display: block
+}
+
+.frontApp .Page .vertical figure .imgWrapper img {
+  display: inline-block;
+  max-width: 100%
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .vertical {
+    width: 100% !important
+  }
+}
+
+.frontApp .Page .dynamicGrid {
+  position: relative;
+  width: 100%
+}
+
+.frontApp .Page .dynamicGrid figure {
+  position: absolute;
+  left: 0;
+  top: 0
+}
+
+.frontApp .Page .dynamicGrid figure .imgWrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain
+}
+
+.frontApp .Page .dynamicGrid.bottom1 figure .aFigcaption {
+  height: 6vw
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .dynamicGrid {
+    height: auto !important
+  }
+
+  .frontApp .Page .dynamicGrid figure {
+    position: relative;
+    left: 0 !important;
+    top: 0 !important;
+    margin-bottom: 3vh !important
+  }
+
+  .frontApp .Page .dynamicGrid figure .imgWrapper {
+    height: auto !important;
+    width: 100% !important
+  }
+}
+
+.frontApp .Page .twoOne {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%
+}
+
+.frontApp .Page .twoOne figure .imgWrapper img {
+  height: 100%;
+  width: auto
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .twoOne {
+    display: block;
+    width: 100% !important
+  }
+
+  .frontApp .Page .twoOne figure {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 3vh !important;
+    width: 100%
+  }
+
+  .frontApp .Page .twoOne figure .imgWrapper {
+    height: auto !important;
+    width: 100% !important
+  }
+
+  .frontApp .Page .twoOne figure .imgWrapper img {
+    width: 100%
+  }
+}
+
+.frontApp .Page .sideToSide, .frontApp .Page .zigzag {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-gap: 8vh
+}
+
+.frontApp .Page .sideToSide figure, .frontApp .Page .zigzag figure {
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+.frontApp .Page .sideToSide figure .imgWrapper, .frontApp .Page .zigzag figure .imgWrapper {
+  display: block;
+  width: 60%;
+  margin-right: 5%;
+  height: 30vw
+}
+
+.frontApp .Page .sideToSide figure .imgWrapper img, .frontApp .Page .zigzag figure .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+
+.frontApp .Page .sideToSide figure .aFigcaption, .frontApp .Page .zigzag figure .aFigcaption {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.frontApp .Page .sideToSide figure .aFigcaption .CaptionText, .frontApp .Page .zigzag figure .aFigcaption .CaptionText {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em
+}
+
+.frontApp .Page .sideToSide figure .aFigcaption .CaptionButton, .frontApp .Page .zigzag figure .aFigcaption .CaptionButton {
+  align-self: flex-start !important;
+  margin-top: 0 !important
+}
+
+.frontApp .Page .zigzag figure .imgWrapper {
+  width: 55%;
+  margin-right: 3%
+}
+
+.frontApp .Page .zigzag figure .aFigcaption {
+  width: 42%
+}
+
+.frontApp .Page .zigzag figure:nth-child(even) {
+  flex-direction: row-reverse
+}
+
+.frontApp .Page .zigzag figure:nth-child(even) .imgWrapper {
+  margin-right: 0;
+  margin-left: 3%
+}
+
+.frontApp .Page .zigzag figure:nth-child(even) .aFigcaption {
+  text-align: right
+}
+
+.frontApp .Page .zigzag figure:nth-child(even) .aFigcaption .CaptionButton {
+  align-self: flex-end !important
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .sideToSide figure.Item, .frontApp .Page .zigzag figure.Item {
+    display: block;
+    margin-bottom: 3vh !important
+  }
+
+  .frontApp .Page .sideToSide figure.Item .aFigcaption, .frontApp .Page .sideToSide figure.Item .imgWrapper, .frontApp .Page .zigzag figure.Item .aFigcaption, .frontApp .Page .zigzag figure.Item .imgWrapper {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important
+  }
+
+  .frontApp .Page .sideToSide figure.Item .imgWrapper, .frontApp .Page .zigzag figure.Item .imgWrapper {
+    height: 35vh !important
+  }
+
+  .frontApp .Page .sideToSide figure.Item .aFigcaption, .frontApp .Page .zigzag figure.Item .aFigcaption {
+    text-align: center !important;
+    margin-top: 2vh
+  }
+
+  .frontApp .Page .sideToSide figure.Item .aFigcaption .CaptionButton, .frontApp .Page .zigzag figure.Item .aFigcaption .CaptionButton {
+    align-self: center !important
+  }
+}
+
+.frontApp .Page .boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2.5vw;
+  grid-row-gap: 2.5vw
+}
+
+.frontApp .Page .boxes figure {
+  padding: 2vw
+}
+
+.frontApp .Page .boxes figure .imgWrapper {
+  height: 220px;
+  overflow: hidden;
+  margin-bottom: 2.5em
+}
+
+.frontApp .Page .boxes figure .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block
+}
+
+.frontApp .Page .boxes figure .aFigcaption {
+  height: calc(100% - 240px);
+  display: flex;
+  flex-direction: column;
+  text-align: center
+}
+
+.frontApp .Page .boxes figure .aFigcaption .CaptionButton {
+  margin-top: auto
+}
+
+.frontApp .Page .boxes figure .aFigcaption .CaptionText {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em
+}
+
+@media only screen and (min-width: 2300px) {
+  .frontApp .Page .boxes {
+    grid-template-columns: repeat(5, 1fr)
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .frontApp .Page .boxes {
+    grid-template-columns: repeat(3, 1fr)
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .frontApp .Page .boxes {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .boxes {
+    display: block
+  }
+
+  .frontApp .Page .boxes figure {
+    margin-bottom: 5vh
+  }
+
+  .frontApp .Page .boxes figure .imgWrapper {
+    height: 35vh !important
+  }
+}
+
+.frontApp .Page .boxes2 .Gallery {
+  grid-template-columns: repeat(3, 1fr)
+}
+
+.frontApp .Page .boxes2 .Gallery figure {
+  padding: 0
+}
+
+.frontApp .Page .boxes2 .Gallery figure .imgWrapper {
+  padding: 0 7%;
+  margin-bottom: 1.8em
+}
+
+.frontApp .Page .boxes2 .Gallery figure .aFigcaption .CaptionText {
+  margin-top: 1.5em;
+  margin-bottom: 0
+}
+
+@media only screen and (min-width: 2300px) {
+  .frontApp .Page .boxes2 .Gallery {
+    grid-template-columns: repeat(4, 1fr)
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .frontApp .Page .boxes2 .Gallery {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .frontApp .Page .boxes2 .Gallery {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .boxes2 {
+    padding-left: 5vw !important;
+    padding-right: 5vw !important
+  }
+
+  .frontApp .Page .boxes2 figure {
+    margin-bottom: 9vh
+  }
+}
+
+.frontApp .Page .skewed .Gallery {
+  grid-template-columns: repeat(2, 1fr)
+}
+
+.frontApp .Page .skewed .Gallery figure {
+  padding: 0
+}
+
+.frontApp .Page .skewed .Gallery figure .imgWrapper {
+  height: 20vw;
+  margin-bottom: 1.8em
+}
+
+.frontApp .Page .skewed .Gallery figure .aFigcaption .CaptionText {
+  margin-top: 1.5em;
+  margin-bottom: 0
+}
+
+.frontApp .Page .skewed .Gallery figure:nth-child(2) {
+  margin-top: 15vh
+}
+
+.frontApp .Page .skewed .Gallery figure:nth-child(2n+3) {
+  margin-top: -15vh
+}
+
+@media only screen and (min-width: 2300px) {
+  .frontApp .Page .skewed .Gallery {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .frontApp .Page .skewed .Gallery {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .frontApp .Page .skewed .Gallery {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .skewed figure {
+    margin-top: 0 !important;
+    margin-bottom: 9vh
+  }
+}
+
+.frontApp .Page .quotas1 .boxes figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.frontApp .Page .quotas1 .boxes figure .imgWrapper {
+  height: 7vw;
+  width: 7vw;
+  border-radius: 100%
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .quotas1 .boxes figure .imgWrapper {
+    height: 35vw !important;
+    width: 35vw !important
+  }
+}
+
+.frontApp .Page .serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2.5vw;
+  grid-row-gap: 2.5vw
+}
+
+.frontApp .Page .serviceGrid figure {
+  padding: 2vw;
+  display: flex;
+  flex-direction: column
+}
+
+.frontApp .Page .serviceGrid figure .CaptionText {
+  margin-top: 2.5em
+}
+
+.frontApp .Page .serviceGrid figure .CaptionButton {
+  margin-top: 2.5em
+}
+
+@media only screen and (min-width: 2300px) {
+  .frontApp .Page .serviceGrid {
+    grid-template-columns: repeat(5, 1fr)
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .frontApp .Page .serviceGrid {
+    grid-template-columns: repeat(3, 1fr)
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .frontApp .Page .serviceGrid {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .frontApp .Page .serviceGrid {
+    grid-template-columns: repeat(1, 1fr)
+  }
+}
+
+.frontApp .Page .parallax {
+  width: 100%;
+  height: 100vh
+}
+
+.frontApp .Page .parallax figure {
+  width: 100%;
+  height: 100%
+}
+
+.frontApp .Page .parallax figure .imgWrapper {
+  width: 100%;
+  height: 100%
+}
+
+.frontApp .Page .parallax figure .imgWrapper .divImg {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover
+}
+
+.frontApp .Page .parallax.contain figure .imgWrapper .divImg {
+  background-size: contain
+}
+
+.routerViewWrapper {
+  background-color: inherit
+}
+
+.sectionWrapper {
+  background-color: inherit
+}
+
+.sectionWrapper .Section {
+  background-color: inherit
+}
+
+.Gallery.cover1 figure, .Gallery.cover2 figure, .Gallery.cover3 figure, .Slideshow.cover1 figure, .Slideshow.cover2 figure, .Slideshow.cover3 figure {
+  background-color: inherit
+}
+
+.frontApp .Page figure {
+  position: relative;
+  cursor: pointer;
+  max-width: 100%
+}
+
+.frontApp .Page .Gallery.hide .aFigcaption, .frontApp .Page .Slideshow.hide .aFigcaption {
+  display: none
+}
+
+.frontApp .Page .Gallery.cover1 .aFigcaption, .frontApp .Page .Slideshow.cover1 .aFigcaption {
+  position: absolute !important;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: .01;
+  text-align: center
+}
+
+.frontApp .Page .Gallery.cover1 .aFigcaption:hover, .frontApp .Page .Slideshow.cover1 .aFigcaption:hover {
+  opacity: .7
+}
+
+.frontApp .Page .Gallery.cover3 .aFigcaption, .frontApp .Page .Slideshow.cover3 .aFigcaption {
+  position: absolute !important;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: .5;
+  text-align: center
+}
+
+.frontApp .Page .Gallery.cover3 .aFigcaption:hover, .frontApp .Page .Slideshow.cover3 .aFigcaption:hover {
+  opacity: .01
+}
+
+.frontApp .Page .Gallery.cover2 .aFigcaption, .frontApp .Page .Slideshow.cover2 .aFigcaption {
+  position: absolute !important;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: .01;
+  text-align: center;
+  padding: 2%
+}
+
+.frontApp .Page .Gallery.cover2 figure:hover .aFigcaption, .frontApp .Page .Slideshow.cover2 figure:hover .aFigcaption {
+  opacity: .7
+}
+
+.frontApp .Page .Gallery.bottom1 .aFigcaption, .frontApp .Page .Slideshow.bottom1 .aFigcaption {
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0 1.4em 0
+}
+
+.frontApp .Page .Gallery.bottom2 .aFigcaption, .frontApp .Page .Slideshow.bottom2 .aFigcaption {
+  min-height: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: .6em 1em
+}
+
+.frontApp .Page .puzzle.bottom1 figure .imgWrapper, .frontApp .Page .puzzle.bottom2 figure .imgWrapper {
+  height: 71%
+}
+
+.frontApp .Page .puzzle.bottom1 figure:nth-child(8n+1), .frontApp .Page .puzzle.bottom2 figure:nth-child(8n+1) {
+  height: 44vw
+}
+
+.frontApp .Page .puzzle.bottom1 figure:nth-child(8n+1) .imgWrapper, .frontApp .Page .puzzle.bottom2 figure:nth-child(8n+1) .imgWrapper {
+  height: 85%
+}
+
+.frontApp .Page .Slideshow.bottom1 figure .imgWrapper {
+  height: calc(100% - 100px)
+}
+
+.frontApp .Page .Slideshow.bottom1 figure .aFigcaption {
+  max-height: 100px
+}
+
+.frontApp .Page .Gallery.cover1.shadows figure, .frontApp .Page .Gallery.cover2.shadows figure, .frontApp .Page .Gallery.cover3.shadows figure, .frontApp .Page .Gallery.hide.shadows figure {
+  box-shadow: 0 .1em 1em 0 rgba(0, 0, 0, .4)
+}
+
+.frontApp .Page .Gallery.bottom1.shadows figure .imgWrapper, .frontApp .Page .Gallery.bottom2.shadows figure .imgWrapper {
+  box-shadow: 0 .1em 1em 0 rgba(0, 0, 0, .4)
+}
+
+.frontApp .Page .alignCenter.Gallery.shadows figure, .frontApp .Page .random.Gallery.shadows figure, .frontApp .Page .zigzag.Gallery.shadows figure {
+  box-shadow: none
+}
+
+.frontApp .Page .alignCenter.Gallery.shadows figure .imgWrapper, .frontApp .Page .random.Gallery.shadows figure .imgWrapper, .frontApp .Page .zigzag.Gallery.shadows figure .imgWrapper {
+  box-shadow: 0 .1em 1em 0 rgba(0, 0, 0, .4)
+}
+
+.frontApp .Page .circleRatio.Gallery.shadows figure, .frontApp .Page .vertical.Gallery.shadows figure {
+  box-shadow: none
+}
+
+.frontApp .Page .circleRatio.Gallery.shadows figure .imgWrapper, .frontApp .Page .vertical.Gallery.shadows figure .imgWrapper {
+  box-shadow: none
+}
+
+.frontApp .Page .circleRatio.Gallery.shadows figure .imgWrapper img, .frontApp .Page .vertical.Gallery.shadows figure .imgWrapper img {
+  box-shadow: 0 .1em 1em 0 rgba(0, 0, 0, .4)
+}
+
+.frontApp .Page .sideToSide.Gallery.shadows figure, .frontApp .Page .zigzag.Gallery.shadows figure {
+  box-shadow: none
+}
+
+.frontApp .Page .sideToSide.Gallery.shadows figure .imgWrapper, .frontApp .Page .zigzag.Gallery.shadows figure .imgWrapper {
+  box-shadow: 0 .1em 1em 0 rgba(0, 0, 0, .4)
+}
+
+.frontApp .Page .boxes.Gallery.shadows figure, .frontApp .Page .serviceGrid.Gallery.shadows figure {
+  box-shadow: 0 .1em 1em 0 rgba(0, 0, 0, .4)
+}
+
+.frontApp .Page .Gallery.cover1.rounded figure, .frontApp .Page .Gallery.cover2.rounded figure, .frontApp .Page .Gallery.cover3.rounded figure, .frontApp .Page .Gallery.hide.rounded figure {
+  border-radius: .4em
+}
+
+.frontApp .Page .Gallery.cover1.rounded figure .aFigcaption, .frontApp .Page .Gallery.cover1.rounded figure .imgWrapper, .frontApp .Page .Gallery.cover2.rounded figure .aFigcaption, .frontApp .Page .Gallery.cover2.rounded figure .imgWrapper, .frontApp .Page .Gallery.cover3.rounded figure .aFigcaption, .frontApp .Page .Gallery.cover3.rounded figure .imgWrapper, .frontApp .Page .Gallery.hide.rounded figure .aFigcaption, .frontApp .Page .Gallery.hide.rounded figure .imgWrapper {
+  border-radius: .4em
+}
+
+.frontApp .Page .Gallery.bottom1.rounded figure .imgWrapper, .frontApp .Page .Gallery.bottom2.rounded figure .imgWrapper {
+  border-radius: .4em
+}
+
+.frontApp .Page .alignCenter.Gallery.rounded figure, .frontApp .Page .random.Gallery.rounded figure, .frontApp .Page .zigzag.Gallery.rounded figure {
+  border-radius: 0
+}
+
+.frontApp .Page .alignCenter.Gallery.rounded figure .imgWrapper, .frontApp .Page .random.Gallery.rounded figure .imgWrapper, .frontApp .Page .zigzag.Gallery.rounded figure .imgWrapper {
+  border-radius: .4em
+}
+
+.frontApp .Page .vertical.Gallery.rounded figure {
+  border-radius: 0
+}
+
+.frontApp .Page .vertical.Gallery.rounded figure .imgWrapper {
+  border-radius: 0
+}
+
+.frontApp .Page .vertical.Gallery.rounded figure .imgWrapper img {
+  border-radius: .4em
+}
+
+.frontApp .Page .circleRatio.Gallery.rounded figure {
+  border-radius: 0
+}
+
+.frontApp .Page .circleRatio.Gallery.rounded figure .imgWrapper {
+  border-radius: 0
+}
+
+.frontApp .Page .circleRatio.Gallery.rounded figure .imgWrapper img {
+  border-radius: 50em
+}
+
+.frontApp .Page .sideToSide.Gallery.rounded figure, .frontApp .Page .zigzag.Gallery.rounded figure {
+  border-radius: 0
+}
+
+.frontApp .Page .sideToSide.Gallery.rounded figure .imgWrapper, .frontApp .Page .zigzag.Gallery.rounded figure .imgWrapper {
+  border-radius: .4em
+}
+
+.frontApp .Page .boxes.Gallery.rounded figure, .frontApp .Page .serviceGrid.Gallery.rounded figure {
+  border-radius: .4em
+}
+
+.frontApp .Page .Gallery.cover1.borders figure, .frontApp .Page .Gallery.cover2.borders figure, .frontApp .Page .Gallery.cover3.borders figure, .frontApp .Page .Gallery.hide.borders figure {
+  outline: 1px solid
+}
+
+.frontApp .Page .Gallery.bottom1.borders figure .imgWrapper, .frontApp .Page .Gallery.bottom2.borders figure .imgWrapper {
+  outline: 1px solid
+}
+
+.frontApp .Page .alignCenter.Gallery.borders figure, .frontApp .Page .random.Gallery.borders figure, .frontApp .Page .zigzag.Gallery.borders figure {
+  outline: 0
+}
+
+.frontApp .Page .alignCenter.Gallery.borders figure .imgWrapper, .frontApp .Page .random.Gallery.borders figure .imgWrapper, .frontApp .Page .zigzag.Gallery.borders figure .imgWrapper {
+  outline: 0;
+  border: 1px solid
+}
+
+.frontApp .Page .circleRatio.Gallery.borders figure, .frontApp .Page .vertical.Gallery.borders figure {
+  outline: 0
+}
+
+.frontApp .Page .circleRatio.Gallery.borders figure .imgWrapper, .frontApp .Page .vertical.Gallery.borders figure .imgWrapper {
+  outline: 0
+}
+
+.frontApp .Page .circleRatio.Gallery.borders figure .imgWrapper img, .frontApp .Page .vertical.Gallery.borders figure .imgWrapper img {
+  border: 1px solid
+}
+
+.frontApp .Page .sideToSide.Gallery.borders figure, .frontApp .Page .zigzag.Gallery.borders figure {
+  outline: 0
+}
+
+.frontApp .Page .sideToSide.Gallery.borders figure .imgWrapper, .frontApp .Page .zigzag.Gallery.borders figure .imgWrapper {
+  outline: 0;
+  border: 1px solid
+}
+
+.frontApp .Page .boxes.Gallery.borders figure, .frontApp .Page .serviceGrid.Gallery.borders figure {
+  outline: 0;
+  border: 1px solid
+}
+
+.frontApp .Page .boxes.Gallery.borders figure .imgWrapper, .frontApp .Page .serviceGrid.Gallery.borders figure .imgWrapper {
+  outline: 0
+}
+
+.pbLightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  background-color: inherit
+}
+
+.pbLightbox .closeX {
+  position: absolute;
+  z-index: 3;
+  opacity: .2;
+  top: 6px;
+  left: 8px;
+  cursor: pointer
+}
+
+.pbLightbox .closeX:hover {
+  opacity: 1
+}
+
+.pbLightbox .lbShare {
+  font-size: 20px;
+  position: absolute;
+  z-index: 3;
+  top: 10px;
+  right: 10px
+}
+
+.pbLightbox .lbShare a {
+  margin-left: 10px;
+  opacity: .2;
+  cursor: pointer
+}
+
+.pbLightbox .lbShare a:hover {
+  opacity: 1
+}
+
+.pbLightbox .lightboxInner {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  background-color: inherit
+}
+
+.pbLightbox .lightboxInner span.arrow {
+  position: absolute;
+  top: 47%;
+  z-index: 3;
+  opacity: .2
+}
+
+.pbLightbox .lightboxInner span.arrow.leftArr {
+  left: 2%
+}
+
+.pbLightbox .lightboxInner span.arrow.rightArr {
+  right: 2%
+}
+
+.pbLightbox .lightboxInner span.arrow:hover {
+  opacity: 1
+}
+
+@media only screen and (max-width: 999px) {
+  .pbLightbox .lightboxInner span.arrow {
+    display: none
+  }
+}
+
+.pbLightbox .lightboxInner figure {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: inherit
+}
+
+.pbLightbox .lightboxInner figure .imgWrapper {
+  display: block;
+  height: 100%
+}
+
+.pbLightbox .lightboxInner figure .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain
+}
+
+.pbLightbox .lightboxInner figure .lbFigcaption {
+  background-color: inherit
+}
+
+.pbLightbox .lightboxInner figure .lbFigcaption .captionIcon {
+  font-size: 40px;
+  position: absolute;
+  z-index: 3;
+  opacity: .2;
+  bottom: -5%;
+  right: 49%;
+  cursor: pointer
+}
+
+@media only screen and (max-width: 999px) {
+  .pbLightbox .lightboxInner figure .lbFigcaption .captionIcon {
+    opacity: 1;
+    bottom: -5%
+  }
+}
+
+.pbLightbox .lightboxInner figure .lbFigcaption .captionIcon:hover {
+  opacity: 1
+}
+
+.pbLightbox .lightboxInner figure .playIcon {
+  display: none
+}
+
+.pbLightbox .lightboxInner figure.gotVideo {
+  height: 100%;
+  width: 100%
+}
+
+.pbLightbox .lightboxInner figure.gotVideo .imgWrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.pbLightbox .lightboxInner figure.gotVideo .imgWrapper iframe {
+  width: 100%;
+  height: 100%;
+  max-width: none
+}
+
+.pbLightbox .lightboxInner figure.gotVideo .imgWrapper .playIcon {
+  color: #fff;
+  position: absolute;
+  top: calc(50% - 5rem);
+  left: calc(50% - 5rem);
+  display: block;
+  font-size: 10rem;
+  z-index: 2;
+  opacity: .7;
+  cursor: pointer
+}
+
+.pbLightbox .lightboxInner figure.gotVideo .imgWrapper .playIcon:hover {
+  opacity: 1
+}
+
+.pbLightbox .lightboxInner.lbcover1 .figCapCoverWrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  text-align: center;
+  box-sizing: border-box;
+  overflow-y: auto;
+  padding: 0 25%;
+  opacity: .6;
+  display: flex
+}
+
+.pbLightbox .lightboxInner.lbcover1 .figCapCoverWrapper .figCapCenter {
+  margin: auto
+}
+
+.pbLightbox .lightboxInner.lbcover1 .figCapCoverWrapper .captionIcon {
+  display: block
+}
+
+.pbLightbox .lightboxInner.lbbottom1 .lbFigcaption {
+  position: absolute;
+  left: 50%;
+  bottom: -5%;
+  text-align: center;
+  width: 700px;
+  margin-left: -350px;
+  background-color: inherit;
+  padding: 1em;
+  box-sizing: border-box;
+  opacity: .8;
+  border-radius: 5px;
+  max-height: 100%;
+  overflow-y: auto
+}
+
+.pbLightbox.cover .lightboxInner {
+  height: 100%
+}
+
+.pbLightbox.cover .lightboxInner figure .imgWrapper img {
+  object-fit: cover
+}
+
+.pbLightbox.cover .lightboxInner.lbcover1 .captionIcon {
+  bottom: 0;
+  font-size: 60px
+}
+
+.pbLightbox.cover .lightboxInner.lbbottom1 .lbFigcaption {
+  bottom: 0
+}
+
+.pbCheckout {
+  position: fixed;
+  top: 50%;
+  margin-top: -40vh;
+  max-height: 80vh;
+  width: 90vw;
+  max-width: 800px;
+  margin-left: -400px;
+  left: 50%;
+  padding: 70px 80px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  z-index: 4;
+  box-shadow: 0 0 100vh 100vw rgba(0, 0, 0, .5);
+  background-color: inherit;
+  overflow-y: auto
+}
+
+@media only screen and (max-width: 1000px) {
+  .pbCheckout {
+    margin-left: 0;
+    left: 5%;
+    top: 5%;
+    margin-top: 0;
+    padding: 70px 5% 40px 5%
+  }
+}
+
+.pbCheckout .closeX {
+  position: absolute;
+  z-index: 3;
+  opacity: .2;
+  top: 11px;
+  right: 26px;
+  cursor: pointer
+}
+
+.pbCheckout .closeX:hover {
+  opacity: 1
+}
+
+.pbCheckout span.arrow {
+  position: absolute;
+  top: 20px;
+  z-index: 3;
+  opacity: .2;
+  padding: 7px !important
+}
+
+.pbCheckout span.arrow.leftArr {
+  left: 20px
+}
+
+.pbCheckout span.arrow:hover {
+  opacity: 1
+}
+
+.pbCheckout .checkoutBox {
+  font-size: 14px;
+  letter-spacing: 1px
+}
+
+.pbCheckout .checkoutBox h1 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 22px
+}
+
+.pbCheckout .checkoutBox h3 {
+  margin-bottom: 15px
+}
+
+.pbCheckout .checkoutBox .Button span {
+  font-size: 15px !important;
+  letter-spacing: 3px !important
+}
+
+.pbCheckout .checkoutBox .orderInfoText {
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 150%
+}
+
+.pbCheckout .checkoutBox .buttonRow {
+  margin-top: 20px
+}
+
+.pbCheckout .checkoutBox .articlesWrapper {
+  margin: 0 !important
+}
+
+.pbCheckout .checkoutBox .articlesWrapper article {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: inherit;
+  opacity: .8
+}
+
+.pbCheckout .checkoutBox .articlesWrapper article:hover {
+  opacity: 1
+}
+
+.pbCheckout .checkoutBox .articlesWrapper article .one, .pbCheckout .checkoutBox .articlesWrapper article .two {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end
+}
+
+@media only screen and (max-width: 999px) {
+  .pbCheckout .checkoutBox .articlesWrapper article .one, .pbCheckout .checkoutBox .articlesWrapper article .two {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end
+  }
+}
+
+.pbCheckout .checkoutBox .articlesWrapper article .one {
+  justify-content: flex-start
+}
+
+@media only screen and (max-width: 999px) {
+  .pbCheckout .checkoutBox .articlesWrapper article .one {
+    justify-content: center;
+    align-items: flex-start
+  }
+}
+
+.pbCheckout .checkoutBox .articlesWrapper article .cartImageWrapper {
+  width: 150px;
+  height: 100px;
+  background: 0 0;
+  box-shadow: inset 200px 200px 300px 200px rgba(0, 0, 0, .07)
+}
+
+.pbCheckout .checkoutBox .articlesWrapper article .cartImageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center
+}
+
+.pbCheckout .checkoutBox .articlesWrapper article .titleWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px
+}
+
+@media only screen and (max-width: 999px) {
+  .pbCheckout .checkoutBox .articlesWrapper article .titleWrapper {
+    margin: 10px 0
+  }
+}
+
+.pbCheckout .checkoutBox .articlesWrapper article .nrAndPriceWrapper {
+  background-color: inherit
+}
+
+.pbCheckout .checkoutBox .articlesWrapper article .nrAndPriceWrapper input {
+  width: 80px;
+  color: currentColor;
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background-color: inherit;
+  font-size: 100%;
+  opacity: .8
+}
+
+.pbCheckout .checkoutBox .articlesWrapper article .nrAndPriceWrapper input:hover {
+  opacity: 1
+}
+
+.pbCheckout .checkoutBox .articlesWrapper article .nrAndPriceWrapper span.ficon-ios-close-outline {
+  font-size: 22px;
+  margin-left: 10px;
+  cursor: pointer;
+  padding-top: 4px;
+  opacity: .8
+}
+
+@media only screen and (max-width: 999px) {
+  .pbCheckout .checkoutBox .articlesWrapper article .nrAndPriceWrapper span.ficon-ios-close-outline {
+    margin: 10px 0
+  }
+}
+
+.pbCheckout .checkoutBox .articlesWrapper article .nrAndPriceWrapper span.ficon-ios-close-outline:hover {
+  opacity: 1
+}
+
+.pbCheckout .checkoutBox .articlesWrapper article .nrAndPriceWrapper .price {
+  width: 120px;
+  text-align: right
+}
+
+.pbCheckout .checkoutBox .totalPrice {
+  display: flex;
+  justify-content: space-between;
+  font-size: 120%
+}
+
+.pbCheckout .cart .totalPrice {
+  margin-top: 8vh
+}
+
+.pbCheckout .cart .discountCodeWrapper {
+  margin-top: 40px;
+  border-top: 1px solid;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end
+}
+
+.pbCheckout .cart .discountCodeWrapper label {
+  width: 100%
+}
+
+.pbCheckout .cart .discountCodeWrapper label input {
+  margin-bottom: 0
+}
+
+.pbCheckout .cart .discountCodeWrapper .Button {
+  margin-left: 30px
+}
+
+.pbCheckout .yourInfo .differentShippingAddress {
+  margin-top: 20px
+}
+
+.pbCheckout .reviewOrder .yourInfoWrapper div {
+  margin-bottom: 5px
+}
+
+@media only screen and (max-width: 999px) {
+  .pbCheckout .reviewOrder .yourInfoWrapper div {
+    margin-bottom: 0
+  }
+}
+
+.pbCheckout .reviewOrder .yourInfoWrapper .customerName {
+  font-weight: 700
+}
+
+.pbCheckout .reviewOrder .yourInfoWrapper .addressWrapper {
+  display: flex
+}
+
+@media only screen and (max-width: 999px) {
+  .pbCheckout .reviewOrder .yourInfoWrapper .addressWrapper {
+    flex-direction: column
+  }
+}
+
+.pbCheckout .reviewOrder .yourInfoWrapper .addressWrapper p {
+  margin-right: 10px
+}
+
+.pbCheckout .reviewOrder .yourInfoWrapper .addressWrapper p::after {
+  content: ", "
+}
+
+.pbCheckout .reviewOrder .yourInfoWrapper .addressWrapper p:last-child::after {
+  content: ""
+}
+
+.pbCheckout .reviewOrder .yourInfoWrapper .shipToThis {
+  margin-top: 20px;
+  font-size: 110%;
+  text-transform: uppercase
+}
+
+.pbCheckout .reviewOrder .yourInfoWrapper .acceptTermsWrapper {
+  margin-top: 30px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid
+}
+
+.pbCheckout .reviewOrder .yourInfoWrapper .acceptTermsWrapper .fakeCheckBox {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid;
+  background: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  cursor: pointer
+}
+
+.pbCheckout .reviewOrder .yourInfoWrapper .acceptTermsWrapper .fakeCheckBox .checkIcon {
+  font-size: 20px;
+  display: none
+}
+
+.pbCheckout .reviewOrder .yourInfoWrapper .acceptTermsWrapper .fakeCheckBox.selected .checkIcon {
+  display: flex
+}
+
+.pbCheckout .reviewOrder .yourInfoWrapper .acceptTermsWrapper .expWrapper {
+  cursor: pointer;
+  text-decoration: underline
+}
+
+.pbCheckout .reviewOrder .articlesWrapper {
+  margin: 0 !important
+}
+
+.pbCheckout .reviewOrder .articlesWrapper article {
+  padding: 15px 0;
+  border-bottom: 1px solid
+}
+
+.pbCheckout .reviewOrder .articlesWrapper article:hover {
+  opacity: 1
+}
+
+.pbCheckout .reviewOrder .articlesWrapper article .cartImageWrapper {
+  width: 50px;
+  height: 50px
+}
+
+@media only screen and (max-width: 999px) {
+  .pbCheckout .reviewOrder .articlesWrapper article .cartImageWrapper .cartImageWrapper {
+    width: 150px;
+    height: 100px
+  }
+}
+
+.pbCheckout .reviewOrder .totalPriceWrapper {
+  margin: 2em 0
+}
+
+.pbCheckout .reviewOrder .totalPriceWrapper .totalPrice {
+  font-size: 100%;
+  padding-bottom: 10px
+}
+
+@media only screen and (max-width: 1000px) {
+  .pbCheckout .reviewOrder .totalPriceWrapper .totalPrice {
+    flex-direction: column
+  }
+}
+
+.pbCheckout .reviewOrder .totalPriceWrapper .totalPrice.subTotal {
+  font-size: 110%;
+  padding-bottom: 15px
+}
+
+.pbCheckout .reviewOrder .totalPriceWrapper .totalPrice:last-child {
+  font-size: 120%;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid
+}
+
+.pbCheckout .reviewOrder .totalPriceWrapper .totalPrice .shippingAddedLater {
+  font-size: 90%;
+  opacity: .8
+}
+
+.pbCheckout .choosePayment .Button {
+  margin-bottom: 30px
+}
+
+.pbCheckout .termsAndPoliciesPopup {
+  position: fixed;
+  width: 600px;
+  max-height: 70vh;
+  overflow-y: auto;
+  left: 50%;
+  margin-left: -300px;
+  top: 15%;
+  background: inherit;
+  border-radius: 10px;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 0 0 100vh 100vw rgba(0, 0, 0, .5);
+  font-size: 14px !important
+}
+
+.pbCheckout .termsAndPoliciesPopup .Header {
+  font-size: 22px !important
+}
+
+@media only screen and (max-width: 400px) {
+  .pbCheckout .termsAndPoliciesPopup {
+    width: 350px;
+    margin-left: -175px
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .pbCheckout .termsAndPoliciesPopup {
+    width: 280px;
+    margin-left: -140px
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .pbCheckout .termsAndPoliciesPopup {
+    width: 250px;
+    margin-left: -125px
+  }
+}
+
+.pbCheckout .termsAndPoliciesPopup .termsAndCond {
+  margin-bottom: 30px
+}
+
+.pbCheckout .termsAndPoliciesPopup .returnPolicy, .pbCheckout .termsAndPoliciesPopup .termsAndCond {
+  line-height: 150%
+}
+
+.pbCheckout .termsAndPoliciesPopup .closeX {
+  right: 26px
+}
+
+.pbCheckout .termsAndPoliciesPopup h1 {
+  margin-bottom: 20px
+}
+
+@font-face {
+  font-family: socialmedia-icons;
+  src: url(/pb4/_output/front/_css/socialmedia-icons/fonts/socialmedia-icons.eot);
+  src: url(/pb4/_output/front/_css/socialmedia-icons/fonts/socialmedia-icons.eot?#iefix) format("embedded-opentype"), url(/pb4/_output/front/_css/socialmedia-icons/fonts/socialmedia-icons.woff) format("woff"), url(/pb4/_output/front/_css/socialmedia-icons/fonts/socialmedia-icons.ttf) format("truetype"), url(/pb4/_output/front/_css/socialmedia-icons/fonts/socialmedia-icons.svg#socialmedia-icons) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+[data-icon]:before {
+  font-family: socialmedia-icons !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+[class*=" smi-"]:before, [class^=smi-]:before {
+  font-family: socialmedia-icons !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.smi-regular-twitter:before {
+  content: "\61"
+}
+
+.smi-regular-instagram:before {
+  content: "\62"
+}
+
+.smi-regular-facebook:before {
+  content: "\63"
+}
+
+.smi-regular-linkedin:before {
+  content: "\64"
+}
+
+.smi-square-twitter:before {
+  content: "\68"
+}
+
+.smi-square-instagram:before {
+  content: "\69"
+}
+
+.smi-square-facebook:before {
+  content: "\6a"
+}
+
+.smi-square-linkedin:before {
+  content: "\6b"
+}
+
+.smi-square-pinterest:before {
+  content: "\65"
+}
+
+.smi-regular-pinterest:before {
+  content: "\66"
+}
+
+.smi-square-other:before {
+  content: "\67"
+}
+
+.smi-square-youtube:before {
+  content: "\6c"
+}
+
+.smi-regular-blog:before {
+  content: "\6d"
+}
+
+.smi-regular-youtube:before {
+  content: "\6e"
+}
+
+.smi-regular-other:before {
+  content: "\6f"
+}
+
+@font-face {
+  font-family: front-icons;
+  src: url(/pb4/_output/front/_css/front-icons/fonts/front-icons.eot);
+  src: url(/pb4/_output/front/_css/front-icons/fonts/front-icons.eot?#iefix) format("embedded-opentype"), url(/pb4/_output/front/_css/front-icons/fonts/front-icons.woff) format("woff"), url(/pb4/_output/front/_css/front-icons/fonts/front-icons.ttf) format("truetype"), url(/pb4/_output/front/_css/front-icons/fonts/front-icons.svg#front-icons) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+[data-icon]:before {
+  font-family: front-icons !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+[class*=" ficon-"]:before, [class^=ficon-]:before {
+  font-family: front-icons !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.ficon-bubble-comment-streamline-talk:before {
+  content: "\63"
+}
+
+.ficon-ios-plus-outline:before {
+  content: "\65"
+}
+
+.ficon-ios-minus-outline:before {
+  content: "\61"
+}
+
+.ficon-angle-down:before {
+  content: "\62"
+}
+
+.ficon-angle-up:before {
+  content: "\64"
+}
+
+.ficon-bag:before {
+  content: "\66"
+}
+
+.ficon-angle-right:before {
+  content: "\67"
+}
+
+.ficon-angle-left:before {
+  content: "\68"
+}
+
+.ficon-like-love-streamline:before {
+  content: "\69"
+}
+
+.ficon-closed-caption:before {
+  content: "\6a"
+}
+
+.ficon-grid:before {
+  content: "\6b"
+}
+
+.ficon-ios-close-outline:before {
+  content: "\6d"
+}
+
+.ficon-ios-close-empty:before {
+  content: "\6e"
+}
+
+.ficon-checkmark-circled:before {
+  content: "\6c"
+}
+
+.ficon-playback-play:before {
+  content: "\6f"
+}
+
+.ficon-check:before {
+  content: "\70"
+}
+
+.stripeClientPaymentWindow h3.aHead {
+  text-align: center;
+  margin-bottom: 3rem
+}
+
+.stripeClientPaymentWindow button {
+  font-size: 1.4rem
+}
+
+.stripeClientPaymentWindow .whatToPay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem !important
+}
+
+.stripeClientPaymentWindow .field {
+  margin-bottom: 1.5rem;
+  display: block;
+  font-size: 1.2rem
+}
+
+.stripeClientPaymentWindow .field .infoHead {
+  font-weight: 700;
+  margin-bottom: .6rem;
+  display: block;
+  font-size: 1.2rem
+}
+
+.stripeClientPaymentWindow .field .stripe-input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: .8rem;
+  border: 1px solid #d3d3d3;
+  font-size: 1.4rem;
+  font-family: "Helvetica Neue", sans-serif;
+  letter-spacing: .06rem;
+  box-sizing: border-box
+}
+
+.stripeClientPaymentWindow .row.twoInputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.stripeClientPaymentWindow .row.twoInputs .field {
+  width: 48%
+}
+
+.stripeClientPaymentWindow .row.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem
+}
+
+.stripeClientPaymentWindow .row.icons .icon {
+  color: #d3d3d3;
+  font-size: 3rem;
+  margin-right: 2.5rem
+}
+
+.stripeClientPaymentWindow .row.stripeExp {
+  margin-top: .6rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #d3d3d3
+}
+
+.stripeClientPaymentWindow .buttonRowWrap {
+  text-align: center
+}
+
+.stripeClientPaymentWindow .buttonWrap {
+  display: inline-flex;
+  height: 34px;
+  width: 70%
+}
