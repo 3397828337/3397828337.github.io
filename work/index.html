@@ -78,7 +78,7 @@
 <body>
 
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.11.0/dist/jquery.min.js"></script>
 
 
 <div class="frontApp">
@@ -177,104 +177,134 @@
 <link rel="stylesheet" href="/css/sortable.min.css">
 
     
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.0/dist/baguetteBox.min.css">
+
+
+    
 <script src="/js/sortable.min.js"></script>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.0/dist/baguetteBox.min.js"></script>
 
 
     <main class="sortable">
-    <div class="container">
-      <div class="sort__wrapper">
-      <ul class="sortable__nav nav">
-        <li>
-        <a data-sjslink="all" class="nav__link">
-          所有
-        </a>
-        </li>
-        <li>
-        <a data-sjslink="oil" class="nav__link">
-          油画
-        </a>
-        </li>
-        <li>
-        <a data-sjslink="paper" class="nav__link">
-          纸本
-        </a>
-        </li>
-      </ul>
+      <div class="container">
+        <div class="sort__wrapper">
+          <ul class="sortable__nav nav">
+            <!--
+            <li>
+            <a data-sjslink="all" class="nav__link">
+              <span>所有</span>
+            </a>
+            </li>
+            -->
+            <li>
+              <a data-sjslink="oil" class="nav__link">
+                <span>油画</span>
+              </a>
+            </li>
+            <li>
+              <a data-sjslink="paper" class="nav__link">
+                <span>纸本</span>
+              </a>
+            </li>
+          </ul>
 
-      <div id="sortable" class="sjs-default">
-        <div data-sjsel="oil">
-        <div class="card">
-          <img class="card__picture" src="../images/work/001_thumb.jpg" alt="">
-          <div class="card-infos">
-          <h2 class="card__title">海边的树 A Tree By The Sea</h2>
-          <p class="card__text">
-            布面油画 Oil Paingting <br>50cm×60cm 2017
-          </p>
+          <div id="sortable" class="sjs-default oil_gallery">
+            <div data-sjsel="oil">
+              <div class="card">
+                <a href="../images/work/001.jpg" data-caption="海边的树 A Tree By The Sea">
+                  <img class="card__picture lazyload" data-srcset="../images/work/001_thumb.jpg" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" alt="">
+                </a>
+                <div class="card-infos">
+                  <h2 class="card__title">海边的树 A Tree By The Sea</h2>
+                  <p class="card__text">
+                    <b>布面油画 Oil Paingting</b> <br> 50cm×60cm <br><b>2017</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-sjsel="oil">
+              <div class="card">
+                <a href="../images/work/002.jpg" data-caption="逆光 Backlight">
+                  <img class="card__picture lazyload" data-srcset="../images/work/002_thumb.jpg" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" alt="">
+                </a>
+                <div class="card-infos">
+                  <h2 class="card__title">逆光 Backlight</h2>
+                  <p class="card__text">
+                    <b>布面油画 Oil Painting</b> <br>150cm×100cm <br><b>2018</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-sjsel="oil">
+              <div class="card">
+                <a href="../images/work/003.jpg" data-caption="黄金时代 The Golden Age">
+                  <img class="card__picture lazyload" data-srcset="../images/work/003_thumb.jpg" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" alt="">
+                </a>
+                <div class="card-infos">
+                  <h2 class="card__title">黄金时代 The Golden Age</h2>
+                  <p class="card__text">
+                    <b>布面油画 Oil paingting</b> <br>140cm×192cm <br><b>2017</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-sjsel="oil">
+              <div class="card">
+                <a href="../images/work/004.jpg" data-caption="海港 Harbour">
+                  <img class="card__picture lazyload" data-srcset="../images/work/004_thumb.jpg" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" alt="">
+                </a>
+                <div class="card-infos">
+                  <h2 class="card__title">海港 Harbour</h2>
+                  <p class="card__text">
+                    <b>布面油画 Oil Painting</b> <br>80cm×80cm <br><b>2017</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div data-sjsel="paper">
+              <div class="card">
+                <a href="../images/work/005.jpg" data-caption="塞纳河写生 Sketch of Seine" class="paper">
+                  <img class="card__picture lazyload" data-srcset="../images/work/005_thumb.jpg" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" alt="">
+                </a>
+                <div class="card-infos">
+                  <h2 class="card__title">塞纳河写生 Sketch of Seine</h2>
+                  <p class="card__text">
+                    <b>纸本铅笔 Sketch</b> <br>6.9cm×8.5cm <br><b>2018</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-sjsel="paper">
+              <div class="card">
+                <a href="../images/work/006.jpg" data-caption="女青年侧面像 Profile Portrait of a Girl" class="paper">
+                  <img class="card__picture lazyload" data-srcset="../images/work/006_thumb.jpg" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" alt="">
+                </a>
+                <div class="card-infos">
+                  <h2 class="card__title">女青年侧面像 Profile Portrait of a Girl</h2>
+                  <p class="card__text">
+                    <b>纸本铅笔 Sketch</b> <br>24cm×19cm <br><b>2017</b>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        </div>
-        <div data-sjsel="oil">
-        <div class="card">
-          <img class="card__picture" src="../images/work/002_thumb.jpg" alt="">
-          <div class="card-infos">
-          <h2 class="card__title">逆光 Backlight</h2>
-          <p class="card__text">
-            布面油画 Oil Painting <br>150cm×100cm 2018
-          </p>
-          </div>
-        </div>
-        </div>
-        <div data-sjsel="paper">
-        <div class="card">
-          <img class="card__picture" src="../images/work/005_thumb.jpg" alt="">
-          <div class="card-infos">
-          <h2 class="card__title">塞纳河写生 Sketch of Seine</h2>
-          <p class="card__text">
-            纸本铅笔 Sketch <br>6.9cm×8.5cm 2018
-          </p>
-          </div>
-        </div>
-        </div>
-        <div data-sjsel="oil">
-        <div class="card">
-          <img class="card__picture" src="../images/work/004_thumb.jpg" alt="">
-          <div class="card-infos">
-          <h2 class="card__title">海港 Harbour</h2>
-          <p class="card__text">
-            布面油画 Oil Painting <br>80cm×80cm 2017
-          </p>
-          </div>
-        </div>
-        </div>
-        <div data-sjsel="paper">
-        <div class="card">
-          <img class="card__picture" src="../images/work/006_thumb.jpg" alt="">
-          <div class="card-infos">
-          <h2 class="card__title">女青年侧面像 Profile Portrait of a Girl</h2>
-          <p class="card__text">
-            纸本铅笔 Sketch <br>24cm×19cm 2017
-          </p>
-          </div>
-        </div>
-        </div>
-        <div data-sjsel="oil">
-        <div class="card">
-          <img class="card__picture" src="../images/work/003_thumb.jpg" alt="">
-          <div class="card-infos">
-          <h2 class="card__title">黄金时代 The Golden Age</h2>
-          <p class="card__text">
-            布面油画 Oil paingting <br>140cm×192cm 2017
-          </p>
-          </div>
-        </div>
         </div>
       </div>
-      </div>
-    </div>
     </main>
 
     <script>
-    document.querySelector('#sortable').sortablejs()
+    $(function() {
+      document.querySelector('#sortable').sortablejs();
+      baguetteBox.run('.oil_gallery',{ignoreClass: 'paper'});
+      $('.sortable__nav a span').first().trigger('click');
+      $('img.lazyload').lazyload();
+    });
     </script>
 
   </div>
